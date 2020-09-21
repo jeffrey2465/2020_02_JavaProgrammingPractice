@@ -1,26 +1,26 @@
-package sec05_superkeywordsupermethod.EX02;
+ï»¿package sec05_superkeywordsupermethod.EX02;
 
 class A {
 	void abc() {
-		System.out.println("A Å¬·¡½ºÀÇ abc()");
+		System.out.println("A í´ë˜ìŠ¤ì˜ abc()");
 	}
 }
 
 class B extends A{	
 	void abc() {
-		System.out.println("B Å¬·¡½ºÀÇ abc()");
+		System.out.println("B í´ë˜ìŠ¤ì˜ abc()");
 	}
 	void bcd() {
-		super.abc(); //super.abc() : ºÎ¸ğÅ¬·¡½º °´Ã¼ÀÇ abc() ¸Ş¼­µå È£Ãâ;
+		super.abc(); //super.abc() : ë¶€ëª¨í´ë˜ìŠ¤ ê°ì²´ì˜ abc() ë©”ì„œë“œ í˜¸ì¶œ;
 	}
 }
 
 public class SuperKeyword_2 {
 	public static void main(String[] args) {
-		//#1. °´Ã¼ »ı¼º
+		//#1. ê°ì²´ ìƒì„±
 		B bb = new B();
 		
-		//#2. ¸Ş¼­µå È£Ãâ
-		bb.bcd(); //A Å¬·¡½ºÀÇ abc()
+		//#2. ë©”ì„œë“œ í˜¸ì¶œ
+		bb.bcd(); //A í´ë˜ìŠ¤ì˜ abc()
 	}
 }

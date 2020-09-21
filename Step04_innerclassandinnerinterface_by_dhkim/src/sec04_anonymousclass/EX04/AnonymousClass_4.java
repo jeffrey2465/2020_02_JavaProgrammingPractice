@@ -1,4 +1,4 @@
-package sec04_anonymousclass.EX04;
+ï»¿package sec04_anonymousclass.EX04;
 
 interface A {
 	public abstract void abc();
@@ -14,19 +14,19 @@ public class AnonymousClass_4 {
 	public static void main(String[] args) {
 		C c = new C();
 		
-		//#3. ¹æ¹ı#3 Å¬·¡½º¸í X + ÂüÁ¶º¯¼ö¸í  O	
+		//#3. ë°©ë²•#3 í´ë˜ìŠ¤ëª… X + ì°¸ì¡°ë³€ìˆ˜ëª…  O	
 		A a = new A() {
 			public void abc() {
-				System.out.println("¸Å°³º¯¼ö Àü´Ş");
+				System.out.println("ë§¤ê°œë³€ìˆ˜ ì „ë‹¬");
 			}			
 		};
-		c.cde(a); //¸Å°³º¯¼ö Àü´Ş
+		c.cde(a); //ë§¤ê°œë³€ìˆ˜ ì „ë‹¬
 		
-		//#4. ¹æ¹ı#4 Å¬·¡½º¸í X + ÂüÁ¶º¯¼ö¸í  X		
+		//#4. ë°©ë²•#4 í´ë˜ìŠ¤ëª… X + ì°¸ì¡°ë³€ìˆ˜ëª…  X		
 		c.cde(new A() {
 			public void abc() {
-				System.out.println("¸Å°³º¯¼ö Àü´Ş");
+				System.out.println("ë§¤ê°œë³€ìˆ˜ ì „ë‹¬");
 			}			
-		}); //¸Å°³º¯¼ö Àü´Ş
+		}); //ë§¤ê°œë³€ìˆ˜ ì „ë‹¬
 	}
 }

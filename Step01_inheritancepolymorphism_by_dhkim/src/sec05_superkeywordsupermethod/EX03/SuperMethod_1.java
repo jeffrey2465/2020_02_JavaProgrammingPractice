@@ -1,28 +1,28 @@
-package sec05_superkeywordsupermethod.EX03;
+ï»¿package sec05_superkeywordsupermethod.EX03;
 
 class A{
 	A(){
-		System.out.println("A »ý¼ºÀÚ");
+		System.out.println("A ìƒì„±ìž");
 	}
 }
 
 class B extends A{
 	B(){
-		super(); //»ý·«½Ã ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿ Ãß°¡ (ºÎ¸ðÅ¬·¡½ºÀÇ »ý¼ºÀÚ È£Ãâ)
-		System.out.println("B »ý¼ºÀÚ");
+		super(); //ìƒëžµì‹œ ì»´íŒŒì¼ëŸ¬ê°€ ìžë™ ì¶”ê°€ (ë¶€ëª¨í´ëž˜ìŠ¤ì˜ ìƒì„±ìž í˜¸ì¶œ)
+		System.out.println("B ìƒì„±ìž");
 	}
 }
 
 class C {
 	C(int a){
-		System.out.println("C »ý¼ºÀÚ");
+		System.out.println("C ìƒì„±ìž");
 	}
 }
 
 class D extends C {
 //	D(){         //@1
 //		super(); //@2
-//	}            //@3 1-3 ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î Ãß°¡ÇØÁÖ´Â ³»¿ë
+//	}            //@3 1-3 ì»´íŒŒì¼ëŸ¬ê°€ ìžë™ìœ¼ë¡œ ì¶”ê°€í•´ì£¼ëŠ” ë‚´ìš©
 	D(){
 		super(3);
 	}
@@ -32,11 +32,11 @@ class D extends C {
 
 public class SuperMethod_1 {
 	public static void main(String[] args) {
-		//#1. A °´Ã¼ »ý¼º
+		//#1. A ê°ì²´ ìƒì„±
 		A aa = new A();
-		System.out.println(); // A »ý¼ºÀÚ	
+		System.out.println(); // A ìƒì„±ìž	
 	
-		//#2. B °´Ã¼ »ý¼º
-		B bb = new B(); // A »ý¼ºÀÚ -> B »ý¼ºÀÚ
+		//#2. B ê°ì²´ ìƒì„±
+		B bb = new B(); // A ìƒì„±ìž -> B ìƒì„±ìž
 	}
 }

@@ -1,4 +1,4 @@
-package sec01_list.EX02;
+ï»¿package sec01_list.EX02;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,23 +9,23 @@ import java.util.Vector;
 public class CreateListObject {
 	public static void main(String[] args) {
 		
-		//#¹æ¹ı1. List ±¸ÇöÅ¬·¡½ºÀÇ »ı¼ºÀÚ¸¦ »ç¿ëÇÏ¿© °´Ã¼ »ı¼º
+		//#ë°©ë²•1. List êµ¬í˜„í´ë˜ìŠ¤ì˜ ìƒì„±ìë¥¼ ì‚¬ìš©í•˜ì—¬ ê°ì²´ ìƒì„±
 		List<Integer> aList1 = new ArrayList<>(); //capacity=10
-		List<Integer> aList2 = new ArrayList<>(30); //capacity=30 size()¿Í´Â ÀüÇô ´Ù¸¥ °Í
+		List<Integer> aList2 = new ArrayList<>(30); //capacity=30 size()ì™€ëŠ” ì „í˜€ ë‹¤ë¥¸ ê²ƒ
 		
 		List<Integer> aList3 = new Vector<>(); //capacity=10
-		List<Integer> aList4 = new Vector<>(30); //capacity=30 size()¿Í´Â ÀüÇô ´Ù¸¥ °Í
+		List<Integer> aList4 = new Vector<>(30); //capacity=30 size()ì™€ëŠ” ì „í˜€ ë‹¤ë¥¸ ê²ƒ
 		
 		List<Integer> aList5 = new LinkedList<>(); //capacity=10
-		//List<Integer> aList6 = new LinkedList<>(30); //LinkedList´Â ÀúÀå¿ë·®À» ÁöÁ¤ÇÏ´Â »ı¼ºÀÚ ¾øÀ½
+		//List<Integer> aList6 = new LinkedList<>(30); //LinkedListëŠ” ì €ì¥ìš©ëŸ‰ì„ ì§€ì •í•˜ëŠ” ìƒì„±ì ì—†ìŒ
 		
-		//#¹æ¹ı2. Arrays Å¬·¡½ºÀÇ Á¤Àû ¸Ş¼­µå È°¿ë (µ¥ÀÌÅÍÀÇ Å©±â¸¦ ¹Ù²Ü ¼ö ¾ø´Ù)
+		//#ë°©ë²•2. Arrays í´ë˜ìŠ¤ì˜ ì •ì  ë©”ì„œë“œ í™œìš© (ë°ì´í„°ì˜ í¬ê¸°ë¥¼ ë°”ê¿€ ìˆ˜ ì—†ë‹¤)
 		List<Integer> aList7 = Arrays.asList(1,2,3,4);
-		List<String> aList8 = Arrays.asList("¾È³ç", "¹æ°¡");
+		List<String> aList8 = Arrays.asList("ì•ˆë…•", "ë°©ê°€");
 		aList7.set(1, 7);
-		aList8.set(0, "°¨»ç");
-		//aList7.add(5); //ºÒ°¡´É
-		//aList8.remove(0); //ºÒ°¡´É
+		aList8.set(0, "ê°ì‚¬");
+		//aList7.add(5); //ë¶ˆê°€ëŠ¥
+		//aList8.remove(0); //ë¶ˆê°€ëŠ¥
 		
 		System.out.println(aList7);
 		System.out.println(aList8);

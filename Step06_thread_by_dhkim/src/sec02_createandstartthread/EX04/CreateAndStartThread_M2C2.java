@@ -1,17 +1,17 @@
-package sec02_createandstartthread.EX04;
+ï»¿package sec02_createandstartthread.EX04;
 
-//#1. ¹æ¹ı2(M2). Runnable ÀÎÅÍÆäÀÌ½º »ó¼ÓÇÏ¿© Å¬·¡½º »ı¼º  case2: 3°³ÀÇ ¾²·¹µå »ı¼º
+//#1. ë°©ë²•2(M2). Runnable ì¸í„°í˜ì´ìŠ¤ ìƒì†í•˜ì—¬ í´ë˜ìŠ¤ ìƒì„±  case2: 3ê°œì˜ ì“°ë ˆë“œ ìƒì„±
 
 class SMIFileRunnable implements Runnable {
 	
 	@Override
 	public void run() {
-		//#2. ÀÚ¸· ¹øÈ£ ÇÏ³ª~´Ù¼¸
-		String[] strArray = {"ÇÏ³ª", "µÑ", "¼Â", "³İ", "´Ù¼¸"};
+		//#2. ìë§‰ ë²ˆí˜¸ í•˜ë‚˜~ë‹¤ì„¯
+		String[] strArray = {"í•˜ë‚˜", "ë‘˜", "ì…‹", "ë„·", "ë‹¤ì„¯"};
 		try { Thread.sleep(10);} catch (InterruptedException e) {}
-		//#4. ÀÚ¸·¹øÈ£ Ãâ·Â
+		//#4. ìë§‰ë²ˆí˜¸ ì¶œë ¥
 		for (int i=0; i<strArray.length; i++) {
-			System.out.println(" - (ÀÚ¸·¹øÈ£) "+strArray[i]);
+			System.out.println(" - (ìë§‰ë²ˆí˜¸) "+strArray[i]);
 			try { Thread.sleep(200);} catch (InterruptedException e) {}
 		}		
 	}
@@ -21,12 +21,12 @@ class SMIFileRunnable implements Runnable {
 class VideoFileRunnable implements Runnable {
 	@Override
 	public void run() {
-		//#1 ºñµğ¿ÀÇÁ·¹ÀÓ 1~5
+		//#1 ë¹„ë””ì˜¤í”„ë ˆì„ 1~5
 		int[] intArray = {1, 2, 3, 4, 5};
 		
-		//#3. ºñµğ¿À ÇÁ·¹ÀÓ Ãâ·Â
+		//#3. ë¹„ë””ì˜¤ í”„ë ˆì„ ì¶œë ¥
 		for (int i=0; i<intArray.length; i++) {
-			System.out.print("(ºñµğ¿ÀÇÁ·¹ÀÓ) "+intArray[i]);
+			System.out.print("(ë¹„ë””ì˜¤í”„ë ˆì„) "+intArray[i]);
 			try { Thread.sleep(200);} catch (InterruptedException e) {}
 		}			
 	}
@@ -36,15 +36,15 @@ class VideoFileRunnable implements Runnable {
 public class CreateAndStartThread_M2C2 {
 	public static void main(String[] args) {
 		
-		//SMIRunnable °´Ã¼ »ı¼º
+		//SMIRunnable ê°ì²´ ìƒì„±
 		Runnable smiFileRunnable = new SMIFileRunnable();
-		//smiFileRunnable.start(); //¿À·ù
+		//smiFileRunnable.start(); //ì˜¤ë¥˜
 		Thread thread1 = new Thread(smiFileRunnable);
 		thread1.start();
 		
-		//VideoFileRunnable °´Ã¼ »ı¼º
+		//VideoFileRunnable ê°ì²´ ìƒì„±
 		Runnable videoFileRunnable = new VideoFileRunnable();
-		//videoFileRunnable.start(); //¿À·ù
+		//videoFileRunnable.start(); //ì˜¤ë¥˜
 		Thread thread2 = new Thread(videoFileRunnable);
 		thread2.start();
 		

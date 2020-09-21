@@ -1,39 +1,39 @@
-package sec02_interface.EX06;
+ï»¿package sec02_interface.EX06;
 
 interface A { 
-	void abc(); //2020³â »ı¼º
+	void abc(); //2020ë…„ ìƒì„±
 	default void bcd() {
-		System.out.println("A ÀÎÅÍÆäÀÌ½ºÀÇ bcd()");
-	} //2030³â »ı¼º
+		System.out.println("A ì¸í„°í˜ì´ìŠ¤ì˜ bcd()");
+	} //2030ë…„ ìƒì„±
 }
 
-class B implements A { //2020³â »ı¼º
+class B implements A { //2020ë…„ ìƒì„±
 	public void abc() { 
-		System.out.println("B Å¬·¡½ºÀÇ abc()");
+		System.out.println("B í´ë˜ìŠ¤ì˜ abc()");
 	}
 }
 
 class C implements A {
 	public void abc() {
-		System.out.println("C Å¬·¡½ºÀÇ abc()");
+		System.out.println("C í´ë˜ìŠ¤ì˜ abc()");
 	}
 	public void bcd() {
-		System.out.println("C Å¬·¡½ºÀÇ bcd()");
+		System.out.println("C í´ë˜ìŠ¤ì˜ bcd()");
 	}
 }
 
 public class DefaultMethod_1 {
 	public static void main(String[] args) {
-		//#1. °´Ã¼ »ı¼º
+		//#1. ê°ì²´ ìƒì„±
 		A a1 = new B();
 		A a2 = new C();		
 		
-		//#2. ¸Ş¼­µå È£Ãâ
-		a1.abc(); //B Å¬·¡½ºÀÇ abc()
-		a1.bcd(); //A ÀÎÅÍÆäÀÌ½ºÀÇ bcd()
+		//#2. ë©”ì„œë“œ í˜¸ì¶œ
+		a1.abc(); //B í´ë˜ìŠ¤ì˜ abc()
+		a1.bcd(); //A ì¸í„°í˜ì´ìŠ¤ì˜ bcd()
 		
-		a2.abc(); //C Å¬·¡½ºÀÇ abc()
-		a2.bcd(); //C Å¬·¡½ºÀÇ bcd()
+		a2.abc(); //C í´ë˜ìŠ¤ì˜ abc()
+		a2.bcd(); //C í´ë˜ìŠ¤ì˜ bcd()
 	}
 }
 

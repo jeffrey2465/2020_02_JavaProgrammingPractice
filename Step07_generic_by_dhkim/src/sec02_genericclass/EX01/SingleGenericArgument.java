@@ -1,4 +1,4 @@
-package sec02_genericclass.EX01;
+ï»¿package sec02_genericclass.EX01;
 
 class MyClass<T> {
 	private T t;
@@ -13,12 +13,12 @@ class MyClass<T> {
 public class SingleGenericArgument {
 	public static void main(String[] args) {
 		MyClass<String> mc1 = new MyClass<String>();
-		mc1.set("¾È³ç");
+		mc1.set("ì•ˆë…•");
 		System.out.println(mc1.get());
 		MyClass<Integer> mc2 = new MyClass<>();
 		mc2.set(100);
 		System.out.println(mc2.get());
 //		MyClass<Integer> mc3 = new MyClass<>();
-//		mc3.set("¾È³ç"); //¿À·ù °­ÇÑÅ¸ÀÔÃ¼Å©
+//		mc3.set("ì•ˆë…•"); //ì˜¤ë¥˜ ê°•í•œíƒ€ì…ì²´í¬
 	}
 }

@@ -1,4 +1,4 @@
-package sec02_interface.EX01;
+ï»¿package sec02_interface.EX01;
 
 interface A {
 	public static final int a = 3;
@@ -6,18 +6,18 @@ interface A {
 }
 
 interface B {
-	int b = 3; //»ı·«½Ã ÀÚµ¿À¸·Î public static final
-	void bcd();//»ı·«½Ã ÀÚµ¿À¸·Î public abstract
+	int b = 3; //ìƒëµì‹œ ìë™ìœ¼ë¡œ public static final
+	void bcd();//ìƒëµì‹œ ìë™ìœ¼ë¡œ public abstract
 }
 
 public class InterfaceCharacteristics {
 	public static void main(String[] args) {
 		
-		//#1. static ÀÚµ¿Ãß°¡ Ã¼Å©
+		//#1. static ìë™ì¶”ê°€ ì²´í¬
 		System.out.println(A.a);
 		System.out.println(B.b);
 		
-		//#2. final ÀÚµ¿Ãß°¡ Ã¼Å©
+		//#2. final ìë™ì¶”ê°€ ì²´í¬
 //		A.a = 5;
 //		B.b = 5;
 	}

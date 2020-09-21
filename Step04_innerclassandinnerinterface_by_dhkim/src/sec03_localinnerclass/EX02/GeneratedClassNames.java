@@ -1,4 +1,4 @@
-package sec03_localinnerclass.EX02;
+﻿package sec03_localinnerclass.EX02;
 
 class A {
 	void abc() {

@@ -1,6 +1,6 @@
-package sec02_interface.EX04;
+ï»¿package sec02_interface.EX04;
 
-//#¹æ¹ı1. ÀÚ½ÄÅ¬·¡½º »ı¼º + ÀÚ½ÄÅ¬·¡½º »ı¼ºÀÚ·Î °´Ã¼ »ı¼º 
+//#ë°©ë²•1. ìì‹í´ë˜ìŠ¤ ìƒì„± + ìì‹í´ë˜ìŠ¤ ìƒì„±ìë¡œ ê°ì²´ ìƒì„± 
 interface A {
 	int a = 3;
 	void abc();
@@ -8,18 +8,18 @@ interface A {
 
 class B implements A {	
 	public void abc() {
-		System.out.println("¹æ¹ı#1. ÀÚ½ÄÅ¬·¡½º »ı¼º + ÀÚ½ÄÅ¬·¡½º »ı¼ºÀÚ·Î °´Ã¼ »ı¼º ");		
+		System.out.println("ë°©ë²•#1. ìì‹í´ë˜ìŠ¤ ìƒì„± + ìì‹í´ë˜ìŠ¤ ìƒì„±ìë¡œ ê°ì²´ ìƒì„± ");		
 	}
 }
 
 
 public class CreateObjectOfInterface_1 {
 	public static void main(String[] args) {
-		//#1. °´Ã¼ »ı¼º
+		//#1. ê°ì²´ ìƒì„±
 		A b1 = new B();
 		A b2 = new B();
 		
-		//#2. ¸Ş¼­µå È£Ãâ
+		//#2. ë©”ì„œë“œ í˜¸ì¶œ
 		b1.abc();
 		b2.abc();
 	}

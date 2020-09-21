@@ -1,4 +1,4 @@
-package sec02_genericclass.EX02;
+ï»¿package sec02_genericclass.EX02;
 
 class KeyValue<K,V> {
 	private K key;
@@ -20,7 +20,7 @@ class KeyValue<K,V> {
 public class TwoGenericArguments {
 	public static void main(String[] args) {
 		KeyValue<String, Integer> kv1 = new KeyValue<>();
-		kv1.setKey("»ç°ú");
+		kv1.setKey("ì‚¬ê³¼");
 		kv1.setValue(1000);
 		String key1 = kv1.getKey();
 		int value1 = kv1.getValue();
@@ -29,14 +29,14 @@ public class TwoGenericArguments {
 		
 		KeyValue<Integer, String> kv2 = new KeyValue<>();
 		kv2.setKey(404);
-		kv2.setValue("Not Found(¿äÃ»ÇÑ ÆäÀÌÁö¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù.)");
+		kv2.setValue("Not Found(ìš”ì²­í•œ í˜ì´ì§€ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.)");
 		int key2 = kv2.getKey();
 		String value2 = kv2.getValue();
 		System.out.println("key:"+ key2 + " value:" +value2);
 		
 		
 		KeyValue<String, Void> kv3 = new KeyValue<>();
-		kv3.setKey("Å°°ª¸¸ »ç¿ë");
+		kv3.setKey("í‚¤ê°’ë§Œ ì‚¬ìš©");
 		String key3 = kv3.getKey();
 		System.out.println("key:" + key3);
 	}

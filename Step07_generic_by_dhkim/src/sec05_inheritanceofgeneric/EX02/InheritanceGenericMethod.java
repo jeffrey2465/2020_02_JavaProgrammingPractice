@@ -1,4 +1,4 @@
-package sec05_inheritanceofgeneric.EX02;
+ï»¿package sec05_inheritanceofgeneric.EX02;
 
 class Parent {
 	<T extends Number> void print(T t) {
@@ -13,12 +13,12 @@ class Child extends Parent {
 public class InheritanceGenericMethod {
 	public static void main(String[] args) {
 		
-		//#1. ºÎ¸ğÅ¬·¡½º Á¦³×¸¯¸Ş¼­µå ÀÌ¿ë
+		//#1. ë¶€ëª¨í´ë˜ìŠ¤ ì œë„¤ë¦­ë©”ì„œë“œ ì´ìš©
 		Parent p = new Parent();
 		p.<Integer>print(10);
 		p.print(10);
 		
-		//#2. ÀÚ½ÄÅ¬·¡½º Á¦³×¸¯¸Ş¼­µå ÀÌ¿ë
+		//#2. ìì‹í´ë˜ìŠ¤ ì œë„¤ë¦­ë©”ì„œë“œ ì´ìš©
 		Child c = new Child();
 		c.<Integer>print(10);
 		c.print(10);

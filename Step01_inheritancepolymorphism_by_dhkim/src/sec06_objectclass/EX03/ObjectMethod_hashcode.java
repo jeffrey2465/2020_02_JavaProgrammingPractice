@@ -1,4 +1,4 @@
-package sec06_objectclass.EX03;
+ï»¿package sec06_objectclass.EX03;
 
 import java.util.HashMap;
 
@@ -47,21 +47,21 @@ public class ObjectMethod_hashcode {
 	public static void main(String[] args) {
 		
 		HashMap<Integer, String> hm1 = new HashMap<>();
-		hm1.put(1, "µ¥ÀÌÅÍ1");
-		hm1.put(1, "µ¥ÀÌÅÍ2");
-		hm1.put(2, "µ¥ÀÌÅÍ3");
+		hm1.put(1, "ë°ì´í„°1");
+		hm1.put(1, "ë°ì´í„°2");
+		hm1.put(2, "ë°ì´í„°3");
 		System.out.println(hm1);
 		
 		HashMap<A, String> hm2 = new HashMap<>();
-		hm2.put(new A("Ã¹¹øÂ°"), "µ¥ÀÌÅÍ1");
-		hm2.put(new A("Ã¹¹øÂ°"), "µ¥ÀÌÅÍ2");
-		hm2.put(new A("µÎ¹øÂ°"), "µ¥ÀÌÅÍ3");
+		hm2.put(new A("ì²«ë²ˆì§¸"), "ë°ì´í„°1");
+		hm2.put(new A("ì²«ë²ˆì§¸"), "ë°ì´í„°2");
+		hm2.put(new A("ë‘ë²ˆì§¸"), "ë°ì´í„°3");
 		System.out.println(hm2);
 		
 		HashMap<B, String> hm3 = new HashMap<>();
-		hm3.put(new B("Ã¹¹øÂ°"), "µ¥ÀÌÅÍ1");
-		hm3.put(new B("Ã¹¹øÂ°"), "µ¥ÀÌÅÍ2");
-		hm3.put(new B("µÎ¹øÂ°"), "µ¥ÀÌÅÍ3");
+		hm3.put(new B("ì²«ë²ˆì§¸"), "ë°ì´í„°1");
+		hm3.put(new B("ì²«ë²ˆì§¸"), "ë°ì´í„°2");
+		hm3.put(new B("ë‘ë²ˆì§¸"), "ë°ì´í„°3");
 		System.out.println(hm3);
 		
 		

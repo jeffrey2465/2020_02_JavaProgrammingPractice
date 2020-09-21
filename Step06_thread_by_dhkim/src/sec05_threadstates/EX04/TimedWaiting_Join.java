@@ -1,4 +1,4 @@
-package sec05_threadstates.EX04;
+ï»¿package sec05_threadstates.EX04;
 
 class MyThread extends Thread {
 	@Override
@@ -6,8 +6,8 @@ class MyThread extends Thread {
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			System.out.println(" -- sleep() ÁøÇàÁß interrupt() ¹ß»ı");
-			for(long i=0; i<1000000000L ; i++) {} //½Ã°£Áö¿¬
+			System.out.println(" -- sleep() ì§„í–‰ì¤‘ interrupt() ë°œìƒ");
+			for(long i=0; i<1000000000L ; i++) {} //ì‹œê°„ì§€ì—°
 		}
 	}
 }
@@ -19,11 +19,11 @@ public class TimedWaiting_Join {
 		MyThread myThread = new MyThread();
 		myThread.start();
 		
-		try {Thread.sleep(100);} catch (InterruptedException e) {} //¾²·¹µå ½ÃÀÛ ÁØºñ ½Ã°£
+		try {Thread.sleep(100);} catch (InterruptedException e) {} //ì“°ë ˆë“œ ì‹œì‘ ì¤€ë¹„ ì‹œê°„
 		System.out.println("MyThread State = " + myThread.getState()); //TIMED_WAITING
 		
 		myThread.interrupt();
-		try {Thread.sleep(100);} catch (InterruptedException e) {} //¾²·¹µå ½ÃÀÛ ÁØºñ ½Ã°£
+		try {Thread.sleep(100);} catch (InterruptedException e) {} //ì“°ë ˆë“œ ì‹œì‘ ì¤€ë¹„ ì‹œê°„
 		System.out.println("MyThread State = " + myThread.getState()); //Runnable
 	}
 }

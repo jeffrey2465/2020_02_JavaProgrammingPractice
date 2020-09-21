@@ -1,4 +1,4 @@
-package sec01_typeofexception.EX01;
+﻿package sec01_typeofexception.EX01;
 
 class A { //extends Object
 	protected Object clone() throws CloneNotSupportedException {

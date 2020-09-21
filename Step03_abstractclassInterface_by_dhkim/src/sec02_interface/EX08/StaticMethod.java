@@ -1,14 +1,14 @@
-package sec02_interface.EX08;
+ï»¿package sec02_interface.EX08;
 
 interface A {
 	static void abc() {
-		System.out.println("A ÀÎÅÍÆäÀÌ½ºÀÇ Á¤Àû ¸Ş¼­µå abc()");
+		System.out.println("A ì¸í„°í˜ì´ìŠ¤ì˜ ì •ì  ë©”ì„œë“œ abc()");
 	}
 }
 
 public class StaticMethod {
 	public static void main(String[] args) {
-		//#1.Á¤Àû¸Ş¼­µå È£Ãâ
+		//#1.ì •ì ë©”ì„œë“œ í˜¸ì¶œ
 		A.abc();
 	}
 }

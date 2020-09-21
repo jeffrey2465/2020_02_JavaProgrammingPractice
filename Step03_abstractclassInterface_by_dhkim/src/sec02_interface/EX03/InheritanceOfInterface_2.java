@@ -1,12 +1,12 @@
-package sec02_interface.EX03;
-//Á¢±ÙÁöÁ¤ÀÚ
+ï»¿package sec02_interface.EX03;
+//ì ‘ê·¼ì§€ì •ì
 
 interface A {
 	public abstract void abc(); 
 }
 
 interface B {
-	void bcd(); //»ı·«½Ã public abstract 
+	void bcd(); //ìƒëµì‹œ public abstract 
 }
 
 class C implements A {
@@ -16,7 +16,7 @@ class C implements A {
 }
 
 //class D implements B {
-//	void bcd() { //public -> default ºÒ°¡´É
+//	void bcd() { //public -> default ë¶ˆê°€ëŠ¥
 //		//...
 //	}
 //}

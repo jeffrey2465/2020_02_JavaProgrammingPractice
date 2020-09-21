@@ -1,4 +1,4 @@
-package sec01_list.EX03;
+ï»¿package sec01_list.EX03;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,14 +19,14 @@ public class ArrayListMethod {
 		aList1.add(1, 6);
 		System.out.println(aList1.toString()); //[3, 6, 4, 5]
 		
-		//#3. addAll(¶Ç ´Ù¸¥ ¸®½ºÆ® °´Ã¼)
+		//#3. addAll(ë˜ ë‹¤ë¥¸ ë¦¬ìŠ¤íŠ¸ ê°ì²´)
 		List<Integer> aList2 = new ArrayList<>();
 		aList2.add(1);
 		aList2.add(2);
 		aList2.addAll(aList1);
 		System.out.println(aList2); //[1, 2, 3, 6, 4, 5]
 		
-		//#4. addAll(int index, ¶Ç ´Ù¸¥ ¸®½ºÆ® °´Ã¼)
+		//#4. addAll(int index, ë˜ ë‹¤ë¥¸ ë¦¬ìŠ¤íŠ¸ ê°ì²´)
 		List<Integer> aList3 = new ArrayList<>();
 		aList3.add(1);
 		aList3.add(2); //[1 2]
@@ -40,7 +40,7 @@ public class ArrayListMethod {
 		System.out.println(aList3); //[1, 5, 2, 6]
 		
 		//#6. remove(int index)
-		aList3.remove(1); //1¹ø ÀÎµ¦½º¸¦ »èÁ¦ÇØ¶ó
+		aList3.remove(1); //1ë²ˆ ì¸ë±ìŠ¤ë¥¼ ì‚­ì œí•´ë¼
 		System.out.println(aList3); //[1, 2, 6]
 		
 		//#7. remove(Object o)
@@ -63,11 +63,11 @@ public class ArrayListMethod {
 		System.out.println(aList3.size());//3
 		
 		//#11.get(int index)
-		System.out.println("0¹øÂ° : " + aList3.get(0)); //1
-		System.out.println("1¹øÂ° : " + aList3.get(1)); //2
-		System.out.println("2¹øÂ° : " + aList3.get(2)); //3
+		System.out.println("0ë²ˆì§¸ : " + aList3.get(0)); //1
+		System.out.println("1ë²ˆì§¸ : " + aList3.get(1)); //2
+		System.out.println("2ë²ˆì§¸ : " + aList3.get(2)); //3
 		for(int i=0; i<aList3.size(); i++)
-			System.out.println(i+"¹øÂ° : "+aList3.get(i));
+			System.out.println(i+"ë²ˆì§¸ : "+aList3.get(i));
 		
 		//#12. toArray() List-->Array
 		Object[] object = aList3.toArray();

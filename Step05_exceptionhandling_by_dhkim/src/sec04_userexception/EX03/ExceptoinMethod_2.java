@@ -1,4 +1,4 @@
-package sec04_userexception.EX03;
+ï»¿package sec04_userexception.EX03;
 
 class A {
 	void abc() throws NumberFormatException {
@@ -15,9 +15,9 @@ class A {
 
 public class ExceptoinMethod_2 {
 	public static void main(String[] args) {
-		//#1. °´Ã¼ »ı¼º
+		//#1. ê°ì²´ ìƒì„±
 		A a = new A();
-		//#2. ¸Ş¼­µå È£Ãâ / ¿¹¿ÜÃ³¸®
+		//#2. ë©”ì„œë“œ í˜¸ì¶œ / ì˜ˆì™¸ì²˜ë¦¬
 		try {
 			a.abc();		
 		} catch (NumberFormatException e) {

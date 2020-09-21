@@ -1,6 +1,6 @@
-package sec01_inheritancepolymorphism.EX02;
+ï»¿package sec01_inheritancepolymorphism.EX02;
 
-//»ó¼Ó°ü°è ¸¸µé±â
+//ìƒì†ê´€ê³„ ë§Œë“¤ê¸°
 class A {}
 class B extends A{}
 class C extends B{}
@@ -9,29 +9,29 @@ class D extends B{}
 public class Polymorphism {
 	public static void main(String[] args) {
 		
-		//#1. A Å¸ÀÔÀÇ ´ÙÇüÀû Ç¥Çö
-		A a1 = new A(); //A´Â AÀÌ´Ù. O		 
-		A a2 = new B(); //B´Â AÀÌ´Ù. O
-		A a3 = new C(); //C´Â AÀÌ´Ù. O
-		A a4 = new D(); //D´Â AÀÌ´Ù. O
+		//#1. A íƒ€ì…ì˜ ë‹¤í˜•ì  í‘œí˜„
+		A a1 = new A(); //AëŠ” Aì´ë‹¤. O		 
+		A a2 = new B(); //BëŠ” Aì´ë‹¤. O
+		A a3 = new C(); //CëŠ” Aì´ë‹¤. O
+		A a4 = new D(); //DëŠ” Aì´ë‹¤. O
 		
-		//#2. B Å¸ÀÔÀÇ ´ÙÇüÀû Ç¥Çö
-//		B b1 = new A(); //A´Â  BÀÌ´Ù. X
-		B b2 = new B(); //B´Â  BÀÌ´Ù. O
-		B b3 = new C(); //C´Â  BÀÌ´Ù. O
-		B b4 = new D(); //D´Â  BÀÌ´Ù. O
+		//#2. B íƒ€ì…ì˜ ë‹¤í˜•ì  í‘œí˜„
+//		B b1 = new A(); //AëŠ”  Bì´ë‹¤. X
+		B b2 = new B(); //BëŠ”  Bì´ë‹¤. O
+		B b3 = new C(); //CëŠ”  Bì´ë‹¤. O
+		B b4 = new D(); //DëŠ”  Bì´ë‹¤. O
 		
-		//#3. C Å¸ÀÔÀÇ ´ÙÇüÀû Ç¥Çö
-//		C c1 = new A(); //A´Â  CÀÌ´Ù. X
-//		C c2 = new B(); //B´Â  CÀÌ´Ù. X
-		C c3 = new C(); //C´Â  CÀÌ´Ù. O
-//		C c4 = new D(); //D´Â  CÀÌ´Ù. X
+		//#3. C íƒ€ì…ì˜ ë‹¤í˜•ì  í‘œí˜„
+//		C c1 = new A(); //AëŠ”  Cì´ë‹¤. X
+//		C c2 = new B(); //BëŠ”  Cì´ë‹¤. X
+		C c3 = new C(); //CëŠ”  Cì´ë‹¤. O
+//		C c4 = new D(); //DëŠ”  Cì´ë‹¤. X
 
-		//#4. D Å¸ÀÔÀÇ ´ÙÇüÀû Ç¥Çö
-//		D d1 = new A(); //A´Â  DÀÌ´Ù. X
-//		D d2 = new B(); //B´Â  DÀÌ´Ù. X
-//		D d3 = new C(); //C´Â  DÀÌ´Ù. X
-		D d4 = new D(); //D´Â  DÀÌ´Ù. O
+		//#4. D íƒ€ì…ì˜ ë‹¤í˜•ì  í‘œí˜„
+//		D d1 = new A(); //AëŠ”  Dì´ë‹¤. X
+//		D d2 = new B(); //BëŠ”  Dì´ë‹¤. X
+//		D d3 = new C(); //CëŠ”  Dì´ë‹¤. X
+		D d4 = new D(); //DëŠ”  Dì´ë‹¤. O
 				
 	}
 }

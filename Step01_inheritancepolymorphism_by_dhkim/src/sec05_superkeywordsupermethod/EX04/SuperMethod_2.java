@@ -1,35 +1,35 @@
-package sec05_superkeywordsupermethod.EX04;
+ï»¿package sec05_superkeywordsupermethod.EX04;
 
 class A{
 	A(){
 		this(3);
-		System.out.println("A »ı¼ºÀÚ 1");
+		System.out.println("A ìƒì„±ì 1");
 	}
 	A(int a){
-		System.out.println("A »ı¼ºÀÚ 2");
+		System.out.println("A ìƒì„±ì 2");
 	}
 }
 
 class B extends A{	
 	B(){
 		this(3);
-		System.out.println("B »ı¼ºÀÚ 1");
+		System.out.println("B ìƒì„±ì 1");
 	}
 	B(int a){
-		System.out.println("B »ı¼ºÀÚ 2");
+		System.out.println("B ìƒì„±ì 2");
 	}
 }
 
 
 public class SuperMethod_2 {
 	public static void main(String[] args) {
-		//#1. A °´Ã¼ »ı¼º
-		A aa1 = new A(); //A »ı¼ºÀÚ 2 A »ı¼ºÀÚ 1
-		A aa2 = new A(3); //A »ı¼ºÀÚ 2
+		//#1. A ê°ì²´ ìƒì„±
+		A aa1 = new A(); //A ìƒì„±ì 2 A ìƒì„±ì 1
+		A aa2 = new A(3); //A ìƒì„±ì 2
 		
-		//#2. B °´Ã¼ »ı¼º
-		B bb1 = new B(); //A »ı¼ºÀÚ 2 A »ı¼ºÀÚ 1 B »ı¼ºÀÚ 2 B »ı¼ºÀÚ 1
-		B bb2 = new B(3);//A »ı¼ºÀÚ 2 A »ı¼ºÀÚ 1 B »ı¼ºÀÚ 2
+		//#2. B ê°ì²´ ìƒì„±
+		B bb1 = new B(); //A ìƒì„±ì 2 A ìƒì„±ì 1 B ìƒì„±ì 2 B ìƒì„±ì 1
+		B bb2 = new B(3);//A ìƒì„±ì 2 A ìƒì„±ì 1 B ìƒì„±ì 2
 	}
 
 }

@@ -1,6 +1,6 @@
-package sec03_genericmethod.EX01;
+ï»¿package sec03_genericmethod.EX01;
 
-//ÀÏ¹İÅ¬·¡½º ¾È¿¡ Á¦³×¸¯ ¸Ş¼­µå
+//ì¼ë°˜í´ë˜ìŠ¤ ì•ˆì— ì œë„¤ë¦­ ë©”ì„œë“œ
 class GenericMethods{
 	public <T> T method1(T t) {
 		return t;
@@ -17,8 +17,8 @@ public class GenericMethod {
 	public static void main(String[] args) {
 		
 		GenericMethods gm = new GenericMethods();
-		String str1 = gm.<String>method1("¾È³ç");
-		String str2 = gm.method1("¾È³ç");
+		String str1 = gm.<String>method1("ì•ˆë…•");
+		String str2 = gm.method1("ì•ˆë…•");
 		System.out.println(str1);
 		System.out.println(str2);
 		
@@ -27,8 +27,8 @@ public class GenericMethod {
 		System.out.println(bool1);
 		System.out.println(bool2);
 		
-		gm.<String, Integer>method3("±¹¾î", 80);
-		gm.method3("±¹¾î", 80); 
+		gm.<String, Integer>method3("êµ­ì–´", 80);
+		gm.method3("êµ­ì–´", 80); 
 		
 	}
 }

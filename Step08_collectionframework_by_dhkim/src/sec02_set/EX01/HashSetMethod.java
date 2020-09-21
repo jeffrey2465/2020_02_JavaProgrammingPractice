@@ -1,4 +1,4 @@
-package sec02_set.EX01;
+ï»¿package sec02_set.EX01;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -11,21 +11,21 @@ public class HashSetMethod {
 		Set<String> hSet1 = new HashSet<>();
 		
 		//#1. add(E element)
-		hSet1.add("°¡");
-		hSet1.add("³ª");
-		hSet1.add("°¡");
-		System.out.println(hSet1.toString()); //[°¡ ³ª]
+		hSet1.add("ê°€");
+		hSet1.add("ë‚˜");
+		hSet1.add("ê°€");
+		System.out.println(hSet1.toString()); //[ê°€ ë‚˜]
 		
-		//#2. addAll(´Ù¸¥ set °´Ã¼)
+		//#2. addAll(ë‹¤ë¥¸ set ê°ì²´)
 		Set<String> hSet2 = new HashSet<>();
-		hSet2.add("³ª");
-		hSet2.add("´Ù");
+		hSet2.add("ë‚˜");
+		hSet2.add("ë‹¤");
 		hSet2.addAll(hSet1);
-		System.out.println(hSet2.toString()); //[°¡, ´Ù, ³ª]
+		System.out.println(hSet2.toString()); //[ê°€, ë‹¤, ë‚˜]
 		
 		//#3. remove(Object o)
-		hSet2.remove("³ª");
-		System.out.println(hSet2.toString()); //[°¡, ´Ù]
+		hSet2.remove("ë‚˜");
+		System.out.println(hSet2.toString()); //[ê°€, ë‹¤]
 		
 		//#4. clear()
 		hSet2.clear();
@@ -36,32 +36,32 @@ public class HashSetMethod {
 		
 		//#6. contains (Object o)
 		Set<String> hSet3 = new HashSet<>();
-		hSet3.add("°¡");
-		hSet3.add("³ª");
-		hSet3.add("´Ù");
-		System.out.println(hSet3.contains("³ª")); //true
-		System.out.println(hSet3.contains("¶ó")); //false
+		hSet3.add("ê°€");
+		hSet3.add("ë‚˜");
+		hSet3.add("ë‹¤");
+		System.out.println(hSet3.contains("ë‚˜")); //true
+		System.out.println(hSet3.contains("ë¼")); //false
 		
 		//#7. size()
 		System.out.println(hSet3.size()); //3
 		
 		//#8. iterator()
 		Iterator<String> iterator = hSet3.iterator();
-		while(iterator.hasNext()) { //ÃÑ 3¹ÙÄû
+		while(iterator.hasNext()) { //ì´ 3ë°”í€´
 			System.out.println(iterator.next());
 		}
 		
 		//#9. toArray()
 		Object[] objArray = hSet3.toArray();
-		System.out.println(Arrays.toString(objArray));  //[°¡, ´Ù, ³ª]
+		System.out.println(Arrays.toString(objArray));  //[ê°€, ë‹¤, ë‚˜]
 		
 		//#10-1. toArray(T[] t)
 		String[] strArray1 = hSet3.toArray(new String[0]);
-		System.out.println(Arrays.toString(strArray1)); //[°¡, ´Ù, ³ª]
+		System.out.println(Arrays.toString(strArray1)); //[ê°€, ë‹¤, ë‚˜]
 		
 		//#10-2. toArray(T[] t)
 		String[] strArray2 = hSet3.toArray(new String[5]);
-		System.out.println(Arrays.toString(strArray2)); //[°¡, ´Ù, ³ª, null, null]
+		System.out.println(Arrays.toString(strArray2)); //[ê°€, ë‹¤, ë‚˜, null, null]
 		
 	}
 }

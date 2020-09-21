@@ -1,27 +1,27 @@
-package sec05_threadstates.EX01;
+ï»¿package sec05_threadstates.EX01;
 
 public class NewRunnableTerminated {
 	public static void main(String[] args) {
-		//#¾²·¹µå »óÅÂ ÀúÀå Å¬·¡½º 
+		//#ì“°ë ˆë“œ ìƒíƒœ ì €ì¥ í´ë˜ìŠ¤ 
 		Thread.State state;
 		
-		//#1. °´Ã¼ »ı¼º (NEW)
+		//#1. ê°ì²´ ìƒì„± (NEW)
 		Thread thread = new Thread() {
 			@Override
 			public void run() {
-				for(long i=0; i<1000000000L ; i++) {} //½Ã°£Áö¿¬
+				for(long i=0; i<1000000000L ; i++) {} //ì‹œê°„ì§€ì—°
 			}
 		};		
 		state = thread.getState(); 
 		System.out.println("thread state = "+ state); //NEW
 		
-		//#2. Thread ½ÃÀÛ
+		//#2. Thread ì‹œì‘
 		thread.start();
 		state = thread.getState();
 		System.out.println("thread state = "+ state); //Runnable
 		
 		
-		//#3. Thread Á¾·á
+		//#3. Thread ì¢…ë£Œ
 		try {
 			thread.join();
 		} catch (InterruptedException e) {	}

@@ -1,6 +1,6 @@
-package sec01_theneedforgeneric.EX02;
+ï»¿package sec01_theneedforgeneric.EX02;
 
-//#1. Apple, Pencil Å¬·¡½º¸¦ ¸ğµÎ ÀúÀåÇÏ°í ²¨³¾¼ö ÀÖ´Â Å¬·¡½º
+//#1. Apple, Pencil í´ë˜ìŠ¤ë¥¼ ëª¨ë‘ ì €ì¥í•˜ê³  êº¼ë‚¼ìˆ˜ ìˆëŠ” í´ë˜ìŠ¤
 
 class Apple{}
 class Pencil{}
@@ -17,20 +17,20 @@ class Goods {
 
 public class Solution1_UsingObject {
 	public static void main(String[] args) {
-		//#1. GoodsÀ» ÅëÇØ¼­ Apple °´Ã¼ Ãß°¡ ¹× °¡Á®¿À±â
+		//#1. Goodsì„ í†µí•´ì„œ Apple ê°ì²´ ì¶”ê°€ ë° ê°€ì ¸ì˜¤ê¸°
 		Goods goods1 = new Goods();
 		goods1.setObject(new Apple());
 		Apple apple = (Apple)goods1.getObject();
 		
-		//#2. GoodsÀ» ÅëÇØ¼­ Pencil °´Ã¼ Ãß°¡ ¹× °¡Á®¿À±â
+		//#2. Goodsì„ í†µí•´ì„œ Pencil ê°ì²´ ì¶”ê°€ ë° ê°€ì ¸ì˜¤ê¸°
 		Goods goods2 = new Goods();
 		goods2.setObject(new Pencil());
 		Pencil pencil = (Pencil)goods2.getObject();
 		
-		//#3. Àß¸øµÈ Ä³½ºÆÃ (¾àÇÑ Å¸ÀÔÃ¼Å©)
+		//#3. ì˜ëª»ëœ ìºìŠ¤íŒ… (ì•½í•œ íƒ€ì…ì²´í¬)
 //		Goods goods3 = new Goods();
 //		goods3.setObject(new Apple());
-//		Pencil pencil2 = (Pencil)goods3.getObject(); //½ÇÇà¿¹¿Ü
+//		Pencil pencil2 = (Pencil)goods3.getObject(); //ì‹¤í–‰ì˜ˆì™¸
 	}
 }
 

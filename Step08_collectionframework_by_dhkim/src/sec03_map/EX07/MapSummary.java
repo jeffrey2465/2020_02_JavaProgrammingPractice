@@ -1,4 +1,4 @@
-package sec03_map.EX07;
+ï»¿package sec03_map.EX07;
 
 import java.util.HashMap;
 import java.util.Hashtable;
@@ -9,37 +9,37 @@ import java.util.TreeMap;
 public class MapSummary {
 	public static void main(String[] args) {
 		
-		//#1. HashMap ÀÔ·Â¼ø¼­¿Í Ãâ·Â¼ø¼­´Â ¼­·Î ´Ù¸§
+		//#1. HashMap ì…ë ¥ìˆœì„œì™€ ì¶œë ¥ìˆœì„œëŠ” ì„œë¡œ ë‹¤ë¦„
 		Map<String, Integer> hashMap = new HashMap<>();
-		hashMap.put("´Ù", 30);
-		hashMap.put("¸¶", 40);
-		hashMap.put("³ª", 50);
-		hashMap.put("°¡", 60);
-		System.out.println(hashMap.toString()); //{°¡=60, ´Ù=30, ¸¶=40, ³ª=50}
+		hashMap.put("ë‹¤", 30);
+		hashMap.put("ë§ˆ", 40);
+		hashMap.put("ë‚˜", 50);
+		hashMap.put("ê°€", 60);
+		System.out.println(hashMap.toString()); //{ê°€=60, ë‹¤=30, ë§ˆ=40, ë‚˜=50}
 		
-		//#2. HashTable ÀÔ·Â¼ø¼­¿Í Ãâ·Â¼ø¼­´Â ¼­·Î ´Ù¸§
+		//#2. HashTable ì…ë ¥ìˆœì„œì™€ ì¶œë ¥ìˆœì„œëŠ” ì„œë¡œ ë‹¤ë¦„
 		Map<String, Integer> hashTable = new Hashtable<>();
-		hashTable.put("´Ù", 30);
-		hashTable.put("¸¶", 40);
-		hashTable.put("³ª", 50);
-		hashTable.put("°¡", 60);
-		System.out.println(hashTable.toString()); //{°¡=60, ³ª=50, ¸¶=40, ´Ù=30}
+		hashTable.put("ë‹¤", 30);
+		hashTable.put("ë§ˆ", 40);
+		hashTable.put("ë‚˜", 50);
+		hashTable.put("ê°€", 60);
+		System.out.println(hashTable.toString()); //{ê°€=60, ë‚˜=50, ë§ˆ=40, ë‹¤=30}
 		
-		//#3. LinkedHashMap ÀÔ·Â¼ø¼­¿Í Ãâ·Â¼ø¼­´Â Ç×»ó °°À½
+		//#3. LinkedHashMap ì…ë ¥ìˆœì„œì™€ ì¶œë ¥ìˆœì„œëŠ” í•­ìƒ ê°™ìŒ
 		Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
-		linkedHashMap.put("´Ù", 30);
-		linkedHashMap.put("¸¶", 40);
-		linkedHashMap.put("³ª", 50);
-		linkedHashMap.put("°¡", 60);
-		System.out.println(linkedHashMap.toString()); //{´Ù=30, ¸¶=40, ³ª=50, °¡=60}
+		linkedHashMap.put("ë‹¤", 30);
+		linkedHashMap.put("ë§ˆ", 40);
+		linkedHashMap.put("ë‚˜", 50);
+		linkedHashMap.put("ê°€", 60);
+		System.out.println(linkedHashMap.toString()); //{ë‹¤=30, ë§ˆ=40, ë‚˜=50, ê°€=60}
 		
-		//#4. TreeMap ÀÔ·Â¼ø¼­¿Í »ó°ü¾øÀÌ Ç×»ó ¿À¸§Â÷¼øÀ¸·Î Á¤·Ä (Å°°´Ã¼´Â ´ë¼Ò ºñ±³ ±âÁØ¿¡ Á¦°øµÇ¾î¾ß ÇÔ)
+		//#4. TreeMap ì…ë ¥ìˆœì„œì™€ ìƒê´€ì—†ì´ í•­ìƒ ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬ (í‚¤ê°ì²´ëŠ” ëŒ€ì†Œ ë¹„êµ ê¸°ì¤€ì— ì œê³µë˜ì–´ì•¼ í•¨)
 		Map<String, Integer> treeMap = new TreeMap<>();
-		treeMap.put("´Ù", 30);
-		treeMap.put("¸¶", 40);
-		treeMap.put("³ª", 50);
-		treeMap.put("°¡", 60);
-		System.out.println(treeMap.toString()); //{°¡=60, ³ª=50, ´Ù=30, ¸¶=40}
+		treeMap.put("ë‹¤", 30);
+		treeMap.put("ë§ˆ", 40);
+		treeMap.put("ë‚˜", 50);
+		treeMap.put("ê°€", 60);
+		System.out.println(treeMap.toString()); //{ê°€=60, ë‚˜=50, ë‹¤=30, ë§ˆ=40}
 		
 	}
 }	

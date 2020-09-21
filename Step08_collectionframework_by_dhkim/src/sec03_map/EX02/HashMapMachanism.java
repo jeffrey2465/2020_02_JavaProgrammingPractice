@@ -1,4 +1,4 @@
-package sec03_map.EX02;
+ï»¿package sec03_map.EX02;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -52,40 +52,40 @@ class C {
 public class HashMapMachanism {
 	public static void main(String[] args) {
 		
-		//#1. ¾î¶²°Íµµ ¿À¹ö¶óÀÌµù ÇÏÁö ¾ÊÀ½
+		//#1. ì–´ë–¤ê²ƒë„ ì˜¤ë²„ë¼ì´ë”© í•˜ì§€ ì•ŠìŒ
 		Map<A, String> hashMap1 = new HashMap<>();
 		A a1 = new A(3);
 		A a2 = new A(3);
 		System.out.println(a1==a2); //false
 		System.out.println(a1.equals(a2)); //false
 		System.out.println(a1.hashCode() + ", " + a2.hashCode());
-		hashMap1.put(a1, "Ã¹¹øÂ°");
-		hashMap1.put(a2, "µÎ¹øÂ°");
+		hashMap1.put(a1, "ì²«ë²ˆì§¸");
+		hashMap1.put(a2, "ë‘ë²ˆì§¸");
 		System.out.println(hashMap1.size()); //2
 		System.out.println();
 		
 		
-		//#2. equals ¸Ş¼­µå¸¸ ¿À¹ö¶óÀÌµù
+		//#2. equals ë©”ì„œë“œë§Œ ì˜¤ë²„ë¼ì´ë”©
 		Map<B, String> hashMap2 = new HashMap<>();
 		B b1 = new B(3);
 		B b2 = new B(3);
 		System.out.println(b1==b2); //false
 		System.out.println(b1.equals(b2)); //true
 		System.out.println(b1.hashCode() + ", " + b2.hashCode());
-		hashMap2.put(b1, "Ã¹¹øÂ°");
-		hashMap2.put(b2, "µÎ¹øÂ°");
+		hashMap2.put(b1, "ì²«ë²ˆì§¸");
+		hashMap2.put(b2, "ë‘ë²ˆì§¸");
 		System.out.println(hashMap2.size()); //2
 		System.out.println();
 		
-		//#2. equals + hashCode ¸Ş¼­µå ¿À¹ö¶óÀÌµù
+		//#2. equals + hashCode ë©”ì„œë“œ ì˜¤ë²„ë¼ì´ë”©
 		Map<C, String> hashMap3 = new HashMap<>();
 		C c1 = new C(3);
 		C c2 = new C(3);
 		System.out.println(c1==c2); //false
 		System.out.println(c1.equals(c2)); //true
 		System.out.println(c1.hashCode() + ", " + c2.hashCode());
-		hashMap3.put(c1, "Ã¹¹øÂ°");
-		hashMap3.put(c2, "µÎ¹øÂ°");
+		hashMap3.put(c1, "ì²«ë²ˆì§¸");
+		hashMap3.put(c2, "ë‘ë²ˆì§¸");
 		System.out.println(hashMap3.size()); //1
 		
 	}

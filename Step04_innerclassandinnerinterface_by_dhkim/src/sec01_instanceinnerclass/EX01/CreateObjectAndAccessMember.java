@@ -1,4 +1,4 @@
-package sec01_instanceinnerclass.EX01;
+ï»¿package sec01_instanceinnerclass.EX01;
 
 class A {
 	public int a = 3;
@@ -7,19 +7,19 @@ class A {
 	private int d = 6;
 	
 	void abc() {
-		System.out.println("A Å¬·¡½º ¸Ş¼­µå abc()");
+		System.out.println("A í´ë˜ìŠ¤ ë©”ì„œë“œ abc()");
 	}
 	
-	//ÀÎ½ºÅÏ½º ÀÌ³ÊÅ¬·¡½º
+	//ì¸ìŠ¤í„´ìŠ¤ ì´ë„ˆí´ë˜ìŠ¤
 	class B {
 		void bcd() {
-			//#1. outer classÀÇ ÇÊµå »ç¿ë			
+			//#1. outer classì˜ í•„ë“œ ì‚¬ìš©			
 			System.out.println(a);
 			System.out.println(b);
 			System.out.println(c);
 			System.out.println(d);
 			
-			//#2. outer classÀÇ ¸Ş¼­µå È£Ãâ
+			//#2. outer classì˜ ë©”ì„œë“œ í˜¸ì¶œ
 			abc();
 		}		
 	}
@@ -28,10 +28,10 @@ class A {
 
 public class CreateObjectAndAccessMember {
 	public static void main(String[] args) {
-		//#1. °´Ã¼»ı¼º ´Ü°è 1. outer class °´Ã¼ »ı¼º
+		//#1. ê°ì²´ìƒì„± ë‹¨ê³„ 1. outer class ê°ì²´ ìƒì„±
 		A a = new A();
 		
-		//#2. ¸â¹ö »ç¿ë
+		//#2. ë©¤ë²„ ì‚¬ìš©
 		A.B b = a.new B();
 		b.bcd();
 		

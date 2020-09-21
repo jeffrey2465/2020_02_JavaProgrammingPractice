@@ -1,13 +1,13 @@
-package sec04_anonymousclass.EX03;
+ï»¿package sec04_anonymousclass.EX03;
 
 interface A {
 	public abstract void abc();
 }
 
-//#1. ÀÚ½ÄÅ¬·¡½º¸¦ Á÷Á¢ »ı¼º
+//#1. ìì‹í´ë˜ìŠ¤ë¥¼ ì§ì ‘ ìƒì„±
 class B implements A {	
 	public void abc() {
-		System.out.println("¸Å°³º¯¼ö Àü´Ş");
+		System.out.println("ë§¤ê°œë³€ìˆ˜ ì „ë‹¬");
 	}
 }
 
@@ -21,11 +21,11 @@ public class AnonymousClass_3 {
 	public static void main(String[] args) {
 		C c = new C();
 		
-		//#1. ¹æ¹ı#1 Å¬·¡½º¸í O + ÂüÁ¶º¯¼ö¸í  O
+		//#1. ë°©ë²•#1 í´ë˜ìŠ¤ëª… O + ì°¸ì¡°ë³€ìˆ˜ëª…  O
 		A a = new B();
-		c.cde(a); //¸Å°³º¯¼ö Àü´Ş
+		c.cde(a); //ë§¤ê°œë³€ìˆ˜ ì „ë‹¬
 		
-		//#2. ¹æ¹ı#2 Å¬·¡½º¸í O + ÂüÁ¶º¯¼ö¸í  X		
-		c.cde(new B()); //¸Å°³º¯¼ö Àü´Ş
+		//#2. ë°©ë²•#2 í´ë˜ìŠ¤ëª… O + ì°¸ì¡°ë³€ìˆ˜ëª…  X		
+		c.cde(new B()); //ë§¤ê°œë³€ìˆ˜ ì „ë‹¬
 	}
 }

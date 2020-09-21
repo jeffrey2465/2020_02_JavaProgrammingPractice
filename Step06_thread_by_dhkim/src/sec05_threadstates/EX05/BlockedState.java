@@ -1,10 +1,10 @@
-package sec05_threadstates.EX05;
+ï»¿package sec05_threadstates.EX05;
 
 class MyBlockTest {
-	//#1. °øÀ¯°´Ã¼
+	//#1. ê³µìœ ê°ì²´
 	MyClass mc = new MyClass();
 	
-	//#2. ¼¼ °³ÀÇ ¾²·¹µå ÇÊµå »ý¼º
+	//#2. ì„¸ ê°œì˜ ì“°ë ˆë“œ í•„ë“œ ìƒì„±
 	Thread t1 = new Thread("thread1") {
 		public void run() {
 			mc.syncMethod();
@@ -30,12 +30,12 @@ class MyBlockTest {
 	
 	class MyClass {
 		synchronized void syncMethod() {
-			try {Thread.sleep(100);} catch (InterruptedException e) {} //¾²·¹µå ½ÃÀÛ ÁØºñ ½Ã°£
+			try {Thread.sleep(100);} catch (InterruptedException e) {} //ì“°ë ˆë“œ ì‹œìž‘ ì¤€ë¹„ ì‹œê°„
 			System.out.println("===="+Thread.currentThread().getName()+"====");
 			System.out.println("thread1->" +t1.getState());
 			System.out.println("thread2->" +t2.getState());
 			System.out.println("thread3->" +t3.getState());			
-			for(long i=0; i<1000000000L ; i++) {} //½Ã°£Áö¿¬
+			for(long i=0; i<1000000000L ; i++) {} //ì‹œê°„ì§€ì—°
 		}
 	}
 	

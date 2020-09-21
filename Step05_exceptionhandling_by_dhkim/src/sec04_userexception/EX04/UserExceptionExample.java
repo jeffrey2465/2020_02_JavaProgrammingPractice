@@ -1,6 +1,6 @@
-package sec04_userexception.EX04;
+ï»¿package sec04_userexception.EX04;
 
-//#Á¡¼ö°¡ À½¼öÀÎ °æ¿ì¿¡ ¿¹¿Ü¹ß»ı
+//#ì ìˆ˜ê°€ ìŒìˆ˜ì¸ ê²½ìš°ì— ì˜ˆì™¸ë°œìƒ
 class MinusException extends Exception {
 	public MinusException() {
 		super();		
@@ -9,7 +9,7 @@ class MinusException extends Exception {
 		super(message);		
 	}	
 }
-//#Á¡¼ö°¡ 100Á¡À» ÃÊ°úÇÏ´Â °æ¿ì¿¡ ¿¹¿Ü ¹ß»ı
+//#ì ìˆ˜ê°€ 100ì ì„ ì´ˆê³¼í•˜ëŠ” ê²½ìš°ì— ì˜ˆì™¸ ë°œìƒ
 class OverException extends Exception {
 	public OverException() {
 		super();		
@@ -22,12 +22,12 @@ class OverException extends Exception {
 class A {
 	void checkScore(int score) throws MinusException, OverException {
 		if(score<0) {
-			throw new MinusException("¿¹¿Ü¹ß»ı : À½¼ö°ªÀÔ·Â");
+			throw new MinusException("ì˜ˆì™¸ë°œìƒ : ìŒìˆ˜ê°’ì…ë ¥");
 		}
         else if (score>100)
-			throw new OverException("¿¹¿Ü¹ß»ı : 100Á¡ ÃÊ°ú");
+			throw new OverException("ì˜ˆì™¸ë°œìƒ : 100ì  ì´ˆê³¼");
         else 
-        	System.out.println("Á¤»óÀûÀÎ °ªÀÔ´Ï´Ù.");
+        	System.out.println("ì •ìƒì ì¸ ê°’ì…ë‹ˆë‹¤.");
 	}
 }
 

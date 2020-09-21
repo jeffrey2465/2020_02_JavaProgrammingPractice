@@ -1,4 +1,4 @@
-package sec05_threadstates.EX07;
+ï»¿package sec05_threadstates.EX07;
 
 class DataBox {
 	boolean isEmpty = true;
@@ -9,7 +9,7 @@ class DataBox {
 		}
 		this.data = data;
 		isEmpty=false;
-		System.out.println("ÀÔ·Âµ¥ÀÌÅÍ : "+data);
+		System.out.println("ì…ë ¥ë°ì´í„° : "+data);
 		notify();
 	}
 	synchronized void outputData() {
@@ -17,7 +17,7 @@ class DataBox {
 			try { wait(); } catch (InterruptedException e) {} //WAITING
 		}
 		isEmpty = true;
-		System.out.println("Ãâ·Âµ¥ÀÌÅÍ : "+data);
+		System.out.println("ì¶œë ¥ë°ì´í„° : "+data);
 		notify();
 	}
 }

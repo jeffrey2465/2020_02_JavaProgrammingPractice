@@ -1,27 +1,27 @@
-package sec02_exceptionhandlingsyntax.EX01;
+ï»¿package sec02_exceptionhandlingsyntax.EX01;
 
 public class TryCatchFinally {
 	public static void main(String[] args) {
 		
 		//#1. try-catch
 		try {
-			System.out.println(3/0); //½ÇÇà¿¹¿Ü (ArithmeticException)
-			System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+			System.out.println(3/0); //ì‹¤í–‰ì˜ˆì™¸ (ArithmeticException)
+			System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 		}
 		catch(ArithmeticException e) {
-			System.out.println("¼ıÀÚ´Â 0À¸·Î ³ª´­¼ö ¾ø½À´Ï´Ù.");
-			System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+			System.out.println("ìˆ«ìëŠ” 0ìœ¼ë¡œ ë‚˜ëˆŒìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+			System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 		}
 		
 		//#2. try-catch-finally
 		try {
-			System.out.println(3/0); //½ÇÇà¿¹¿Ü (ArithmeticException)			
+			System.out.println(3/0); //ì‹¤í–‰ì˜ˆì™¸ (ArithmeticException)			
 		}
 		catch(ArithmeticException e) {
-			System.out.println("¼ıÀÚ´Â 0À¸·Î ³ª´­¼ö ¾ø½À´Ï´Ù.");			
+			System.out.println("ìˆ«ìëŠ” 0ìœ¼ë¡œ ë‚˜ëˆŒìˆ˜ ì—†ìŠµë‹ˆë‹¤.");			
 		}
 		finally {
-			System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+			System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 		}
 	}
 }

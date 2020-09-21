@@ -1,4 +1,4 @@
-package sec04_stackandqueue.EX02;
+ï»¿package sec04_stackandqueue.EX02;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -6,7 +6,7 @@ import java.util.Queue;
 public class QueueMethod {
 	public static void main(String[] args) {
 		
-		//#1. ¿¹¿ÜÃ³¸®±â´É ¹ÌÆ÷ÇÔ ¸Ş¼­µå Ã¹¹øÂ° ¼¼Æ®
+		//#1. ì˜ˆì™¸ì²˜ë¦¬ê¸°ëŠ¥ ë¯¸í¬í•¨ ë©”ì„œë“œ ì²«ë²ˆì§¸ ì„¸íŠ¸
 		Queue<Integer> queue1 = new LinkedList<Integer>();
 		//System.out.println(queue1.element());
 		//@1-1 add(E item)
@@ -24,7 +24,7 @@ public class QueueMethod {
 		//System.out.println(queue1.remove()); //
 		
 		
-		//#2. ¿¹¿ÜÃ³¸®±â´É Æ÷ÇÔ ¸Ş¼­µå µÎ¹øÂ° ¼¼Æ®
+		//#2. ì˜ˆì™¸ì²˜ë¦¬ê¸°ëŠ¥ í¬í•¨ ë©”ì„œë“œ ë‘ë²ˆì§¸ ì„¸íŠ¸
 		Queue<Integer> queue2 = new LinkedList<Integer>();
 		System.out.println(queue1.peek()); //null
 		

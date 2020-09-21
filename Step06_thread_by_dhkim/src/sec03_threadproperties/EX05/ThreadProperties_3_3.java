@@ -1,11 +1,11 @@
-package sec03_threadproperties.EX05;
+ï»¿package sec03_threadproperties.EX05;
 
 class MyThread extends Thread {
 	@Override
 	public void run() {
-		System.out.println(getName() + " : " + (isDaemon()? "µ¥¸ó¾²·¹µå":"ÀÏ¹İ¾²·¹µå") );
+		System.out.println(getName() + " : " + (isDaemon()? "ë°ëª¬ì“°ë ˆë“œ":"ì¼ë°˜ì“°ë ˆë“œ") );
 		for(int i =0; i<6; i++) {
-			System.out.println(getName() + " : " + i + "ÃÊ");
+			System.out.println(getName() + " : " + i + "ì´ˆ");
 			try{Thread.sleep(1000);}catch(InterruptedException e) {}
 		}
 	}
@@ -14,21 +14,21 @@ class MyThread extends Thread {
 public class ThreadProperties_3_3 {
 	public static void main(String[] args) {
 		
-		//#1. ÀÏ¹İ¾²·¹µå
+		//#1. ì¼ë°˜ì“°ë ˆë“œ
 		Thread thread1 = new MyThread();
-		thread1.setDaemon(false);//µğÆúÆ®
+		thread1.setDaemon(false);//ë””í´íŠ¸
 		thread1.setName("thread1");
 		thread1.start();
 		
-		//#2. µ¥¸ó¾²·¹µå
+		//#2. ë°ëª¬ì“°ë ˆë“œ
 		Thread thread2 = new MyThread();
-		thread2.setDaemon(true);//µğÆúÆ®
+		thread2.setDaemon(true);//ë””í´íŠ¸
 		thread2.setName("thread2");
 		thread2.start();
 		
-		//#3. 3ÃÊÈÄ main Thread Á¾·á
+		//#3. 3ì´ˆí›„ main Thread ì¢…ë£Œ
 		try {Thread.sleep(3100);} catch (InterruptedException e) {}
-		System.out.println("main Thread Á¾·á");
+		System.out.println("main Thread ì¢…ë£Œ");
 	}
 }
 

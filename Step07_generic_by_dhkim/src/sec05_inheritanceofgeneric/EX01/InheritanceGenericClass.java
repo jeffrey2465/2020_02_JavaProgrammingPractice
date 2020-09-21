@@ -1,4 +1,4 @@
-package sec05_inheritanceofgeneric.EX01;
+ï»¿package sec05_inheritanceofgeneric.EX01;
 
 class Parent<T> {
 	T t;
@@ -27,19 +27,19 @@ class Child2<T, V> extends Parent<T>{
 
 public class InheritanceGenericClass {
 	public static void main(String[] args) {
-		//#1. ºÎ¸ğÁ¦³×¸¯Å¬·¡½º
+		//#1. ë¶€ëª¨ì œë„¤ë¦­í´ë˜ìŠ¤
 		Parent<String> p = new Parent<>();
-		p.setT("ºÎ¸ğÁ¦³×¸¯Å¬·¡½º");
+		p.setT("ë¶€ëª¨ì œë„¤ë¦­í´ë˜ìŠ¤");
 		System.out.println(p.getT());
 		
-		//#2. ÀÚ½ÄÅ¬·¡½º1
+		//#2. ìì‹í´ë˜ìŠ¤1
 		Child1<String> c1 = new Child1<>();
-		c1.setT("ÀÚ½Ä1 Á¦³×¸¯Å¬·¡½º");
+		c1.setT("ìì‹1 ì œë„¤ë¦­í´ë˜ìŠ¤");
 		System.out.println(c1.getT());
 		
-		//#3. ÀÚ½ÄÅ¬·¡½º2
+		//#3. ìì‹í´ë˜ìŠ¤2
 		Child2<String, Integer> c2 = new Child2<>();
-		c2.setT("ÀÚ½Ä2 Á¦³×¸¯Å¬·¡½º");
+		c2.setT("ìì‹2 ì œë„¤ë¦­í´ë˜ìŠ¤");
 		c2.setV(100);
 		System.out.println(c2.getT());
 		System.out.println(c2.getV());

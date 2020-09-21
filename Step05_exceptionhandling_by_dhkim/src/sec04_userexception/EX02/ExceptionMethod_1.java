@@ -1,18 +1,18 @@
-package sec04_userexception.EX02;
+ï»¿package sec04_userexception.EX02;
 
 public class ExceptionMethod_1 {
 	public static void main(String[] args) {
 		
-		//#1. ¿¹¿Ü°´Ã¼ »ı¼º½Ã ¸Ş½ÃÁö Àü´ŞÇÏÁö ¾Ê´Â °æ¿ì
+		//#1. ì˜ˆì™¸ê°ì²´ ìƒì„±ì‹œ ë©”ì‹œì§€ ì „ë‹¬í•˜ì§€ ì•ŠëŠ” ê²½ìš°
 		try {
-			throw new Exception(); //ÀÌ ½ÃÁ¡¿¡¼­ ¿¹¿Ü ¹ß»ı
+			throw new Exception(); //ì´ ì‹œì ì—ì„œ ì˜ˆì™¸ ë°œìƒ
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
 				
-		//#2. ¿¹¿Ü°´Ã¼ »ı¼º½Ã ¸Ş½ÃÁö Àü´ŞÇÏ´Â °æ¿ì 
+		//#2. ì˜ˆì™¸ê°ì²´ ìƒì„±ì‹œ ë©”ì‹œì§€ ì „ë‹¬í•˜ëŠ” ê²½ìš° 
 		try {
-			throw new Exception("¿¹¿Ü¸Ş¼¼Áö"); //ÀÌ ½ÃÁ¡¿¡¼­ ¿¹¿Ü ¹ß»ı
+			throw new Exception("ì˜ˆì™¸ë©”ì„¸ì§€"); //ì´ ì‹œì ì—ì„œ ì˜ˆì™¸ ë°œìƒ
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}

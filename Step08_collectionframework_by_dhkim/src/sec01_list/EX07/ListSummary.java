@@ -1,4 +1,4 @@
-package sec01_list.EX07;
+ï»¿package sec01_list.EX07;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -10,29 +10,29 @@ public class ListSummary {
 		
 		//1. ArrayList
 		List<String> arrayList = new ArrayList<>();
-		arrayList.add("´Ù");
-		arrayList.add("¸¶");
-		arrayList.add("³ª");
-		arrayList.add("°¡");
-		System.out.println(arrayList.toString()); //[´Ù, ¸¶, ³ª, °¡]
+		arrayList.add("ë‹¤");
+		arrayList.add("ë§ˆ");
+		arrayList.add("ë‚˜");
+		arrayList.add("ê°€");
+		System.out.println(arrayList.toString()); //[ë‹¤, ë§ˆ, ë‚˜, ê°€]
 		
 		
 		//2. Vector
 		List<String> vector = new Vector<>();
-		vector.add("´Ù");
-		vector.add("¸¶");
-		vector.add("³ª");
-		vector.add("°¡");
-		System.out.println(vector.toString()); //[´Ù, ¸¶, ³ª, °¡]
+		vector.add("ë‹¤");
+		vector.add("ë§ˆ");
+		vector.add("ë‚˜");
+		vector.add("ê°€");
+		System.out.println(vector.toString()); //[ë‹¤, ë§ˆ, ë‚˜, ê°€]
 		
 
 		//3. LinkedList
 		List<String> linkedList = new LinkedList<>();
-		linkedList.add("´Ù");
-		linkedList.add("¸¶");
-		linkedList.add("³ª");
-		linkedList.add("°¡");
-		System.out.println(linkedList.toString()); //[´Ù, ¸¶, ³ª, °¡]
+		linkedList.add("ë‹¤");
+		linkedList.add("ë§ˆ");
+		linkedList.add("ë‚˜");
+		linkedList.add("ê°€");
+		System.out.println(linkedList.toString()); //[ë‹¤, ë§ˆ, ë‚˜, ê°€]
 		
 	}
 }

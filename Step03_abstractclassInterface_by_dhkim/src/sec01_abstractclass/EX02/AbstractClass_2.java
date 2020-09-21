@@ -1,6 +1,6 @@
-package sec01_abstractclass.EX02;
+ï»¿package sec01_abstractclass.EX02;
 
-//Ãß»óÅ¬·¡½ºÀÇ °´Ã¼ »ı¼º ¹æ¹ı #2 (ÀÍ¸íÀÌ³ÊÅ¬·¡½º¸¦ ÀÌ¿ëÇÏ¿© °´Ã¼ »ı¼º)
+//ì¶”ìƒí´ë˜ìŠ¤ì˜ ê°ì²´ ìƒì„± ë°©ë²• #2 (ìµëª…ì´ë„ˆí´ë˜ìŠ¤ë¥¼ ì´ìš©í•˜ì—¬ ê°ì²´ ìƒì„±)
 abstract class A {
 	abstract void abc();
 }
@@ -8,20 +8,20 @@ abstract class A {
 public class AbstractClass_2 {
 	public static void main(String[] args) {
 		
-		//#1. °´Ã¼ »ı¼º
+		//#1. ê°ì²´ ìƒì„±
 		A a1 = new A() {			
 			void abc() {			
-				System.out.println("¹æ¹ı#2. ÀÍ¸íÀÌ³ÊÅ¬·¡½º ¹æ¹ıÀ¸·Î °´Ã¼ »ı¼º");
+				System.out.println("ë°©ë²•#2. ìµëª…ì´ë„ˆí´ë˜ìŠ¤ ë°©ë²•ìœ¼ë¡œ ê°ì²´ ìƒì„±");
 			}			
 		};
 		
 		A a2 = new A() {			
 			void abc() {			
-				System.out.println("¹æ¹ı#2. ÀÍ¸íÀÌ³ÊÅ¬·¡½º ¹æ¹ıÀ¸·Î °´Ã¼ »ı¼º");
+				System.out.println("ë°©ë²•#2. ìµëª…ì´ë„ˆí´ë˜ìŠ¤ ë°©ë²•ìœ¼ë¡œ ê°ì²´ ìƒì„±");
 			}			
 		};
 		
-		//#2. ¸Ş¼­µå È£Ãâ
+		//#2. ë©”ì„œë“œ í˜¸ì¶œ
 		a1.abc();
 		a2.abc();		
 		

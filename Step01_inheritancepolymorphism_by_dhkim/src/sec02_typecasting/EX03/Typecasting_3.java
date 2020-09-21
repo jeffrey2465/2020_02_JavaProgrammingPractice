@@ -1,4 +1,4 @@
-package sec02_typecasting.EX03;
+ï»¿package sec02_typecasting.EX03;
 
 class A{}
 class B extends A{}
@@ -18,20 +18,20 @@ public class Typecasting_3 {
 		
 		if(aa instanceof B) {
 			B b = (B)aa;
-			System.out.println("aa¸¦ B·Î Ä³½ºÆÃÇÏ¿´½À´Ï´Ù.");
+			System.out.println("aaë¥¼ Bë¡œ ìºìŠ¤íŒ…í•˜ì˜€ìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("aa´Â B Å¸ÀÔÀ¸·Î Ä³½ºÆÃÀÌ ºÒ°¡!!!");
+			System.out.println("aaëŠ” B íƒ€ì…ìœ¼ë¡œ ìºìŠ¤íŒ…ì´ ë¶ˆê°€!!!");
 		}
 			
 		if(ab instanceof B) {
 			B b = (B)ab;
-			System.out.println("ab¸¦ B·Î Ä³½ºÆÃÇÏ¿´½À´Ï´Ù.");
+			System.out.println("abë¥¼ Bë¡œ ìºìŠ¤íŒ…í•˜ì˜€ìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("ab´Â B Å¸ÀÔÀ¸·Î Ä³½ºÆÃÀÌ ºÒ°¡!!!");
+			System.out.println("abëŠ” B íƒ€ì…ìœ¼ë¡œ ìºìŠ¤íŒ…ì´ ë¶ˆê°€!!!");
 		}
 		
-		if ("¾È³ç" instanceof String) {
-			System.out.println("\"¾È³ç\"Àº String Å¬·¡½ºÀÔ´Ï´Ù");
+		if ("ì•ˆë…•" instanceof String) {
+			System.out.println("\"ì•ˆë…•\"ì€ String í´ë˜ìŠ¤ì…ë‹ˆë‹¤");
 		}
 	}
 }

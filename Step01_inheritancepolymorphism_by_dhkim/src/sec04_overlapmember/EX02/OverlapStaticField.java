@@ -1,4 +1,4 @@
-package sec04_overlapmember.EX02;
+ï»¿package sec04_overlapmember.EX02;
 
 class A {
 	static int m = 3;
@@ -11,16 +11,16 @@ class B extends A {
 public class OverlapStaticField {
 	public static void main(String[] args) {
 		
-		//#1.Å¬·¡½º ÀÌ¸§À¸·Î ¹Ù·Î Á¢±Ù
+		//#1.í´ë˜ìŠ¤ ì´ë¦„ìœ¼ë¡œ ë°”ë¡œ ì ‘ê·¼
 		System.out.println(A.m); //3
 		System.out.println(B.m); //4
 		
-		//#2.°´Ã¼ »ı¼º
+		//#2.ê°ì²´ ìƒì„±
 		A aa = new A();
 		B bb = new B();
 		A ab = new B();
 		
-		//#3. °´Ã¼ »ı¼ºÀ» ÅëÇÑ static field
+		//#3. ê°ì²´ ìƒì„±ì„ í†µí•œ static field
 		System.out.println(aa.m); //3		
 		System.out.println(bb.m); //4
 		System.out.println(ab.m); //3

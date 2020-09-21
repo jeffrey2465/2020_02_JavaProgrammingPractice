@@ -1,4 +1,4 @@
-package sec02_genericclass.EX03;
+ï»¿package sec02_genericclass.EX03;
 
 class Apple{}
 class Pencil{}
@@ -15,19 +15,19 @@ class Goods<T> {
 
 public class Solution2_Generic {
 	public static void main(String[] args) {
-		//#1. GoodsÀ» ÅëÇØ¼­ Apple °´Ã¼ Ãß°¡ ¹× °¡Á®¿À±â
+		//#1. Goodsì„ í†µí•´ì„œ Apple ê°ì²´ ì¶”ê°€ ë° ê°€ì ¸ì˜¤ê¸°
 		Goods<Apple> goods1 = new Goods<>();
 		goods1.set(new Apple());
-		Apple apple = goods1.get(); //´Ù¿îÄ³½ºÆÃ ÇÊ¿ä ¾øÀ½
+		Apple apple = goods1.get(); //ë‹¤ìš´ìºìŠ¤íŒ… í•„ìš” ì—†ìŒ
 		
-		//#2. GoodsÀ» ÅëÇØ¼­ Pencil °´Ã¼ Ãß°¡ ¹× °¡Á®¿À±â
+		//#2. Goodsì„ í†µí•´ì„œ Pencil ê°ì²´ ì¶”ê°€ ë° ê°€ì ¸ì˜¤ê¸°
 		Goods<Pencil> goods2 = new Goods<>();
 		goods2.set(new Pencil());
 		Pencil pencil = goods2.get();
 		
-		//#3. Àß¸øµÈ Ä³½ºÆÃ ()
+		//#3. ì˜ëª»ëœ ìºìŠ¤íŒ… ()
 		Goods<Apple> goods3 = new Goods<>();
 		goods3.set(new Apple());
-//		Pencil pencil2 = goods3.get(); //°­ÇÑÅ¸ÀÔÃ¼Å©
+//		Pencil pencil2 = goods3.get(); //ê°•í•œíƒ€ì…ì²´í¬
 	}
 }

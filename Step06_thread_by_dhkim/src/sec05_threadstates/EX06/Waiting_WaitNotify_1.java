@@ -1,13 +1,13 @@
-package sec05_threadstates.EX06;
+ï»¿package sec05_threadstates.EX06;
 
 class DataBox {
 	int data;
 	synchronized void inputData(int data) {
 		this.data = data;
-		System.out.println("ÀÔ·Âµ¥ÀÌÅÍ : "+data);
+		System.out.println("ì…ë ¥ë°ì´í„° : "+data);
 	}
 	synchronized void outputData() {
-		System.out.println("Ãâ·Âµ¥ÀÌÅÍ : "+data);
+		System.out.println("ì¶œë ¥ë°ì´í„° : "+data);
 	}
 }
 

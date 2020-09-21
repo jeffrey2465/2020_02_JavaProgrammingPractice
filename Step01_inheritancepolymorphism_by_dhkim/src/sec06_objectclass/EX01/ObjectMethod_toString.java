@@ -1,6 +1,6 @@
-package sec06_objectclass.EX01;
+ï»¿package sec06_objectclass.EX01;
 
-class A { //extends Object (ÄÄÆÄÀÏ·¯¿¡ ÀÇÇØ¼­ ÀÚµ¿Ãß°¡)
+class A { //extends Object (ì»´íŒŒì¼ëŸ¬ì— ì˜í•´ì„œ ìë™ì¶”ê°€)
 	int a=3;
 	int b=4;
 }
@@ -10,7 +10,7 @@ class B {
 	int b=4;
 
 	public String toString() {		
-		return "ÇÊµå°ª(a, b) =" + a +" " +b;
+		return "í•„ë“œê°’(a, b) =" + a +" " +b;
 	}	
 }
 
@@ -19,13 +19,13 @@ class B {
 public class ObjectMethod_toString {
 	public static void main(String[] args) {
 		
-		//#1. °´Ã¼ »ı¼º
+		//#1. ê°ì²´ ìƒì„±
 		A a = new A();
 		B b = new B();
 		
-		//#2. ¸Ş¼­µå È£Ãâ
-		System.out.printf("%x\n", a.hashCode()); //hashcode¸¦ 16Áø¼ö·Î Ç¥Çö
-		System.out.println(a.toString()); //toString()¸Ş¼­µå´Â »ı·«½Ã ÀÚµ¿ Ãß°¡
+		//#2. ë©”ì„œë“œ í˜¸ì¶œ
+		System.out.printf("%x\n", a.hashCode()); //hashcodeë¥¼ 16ì§„ìˆ˜ë¡œ í‘œí˜„
+		System.out.println(a.toString()); //toString()ë©”ì„œë“œëŠ” ìƒëµì‹œ ìë™ ì¶”ê°€
 		System.out.println(b);
 		
 	}

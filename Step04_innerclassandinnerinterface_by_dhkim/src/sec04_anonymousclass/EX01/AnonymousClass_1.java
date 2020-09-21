@@ -1,4 +1,4 @@
-package sec04_anonymousclass.EX01;
+ï»¿package sec04_anonymousclass.EX01;
 
 class A {
 	C c = new B();
@@ -9,7 +9,7 @@ class A {
 	
 	class B implements C {
 		public void bcd() {
-			System.out.println("ÀÎ½ºÅÏ½º ÀÌ³ÊÅ¬·¡½º");			
+			System.out.println("ì¸ìŠ¤í„´ìŠ¤ ì´ë„ˆí´ë˜ìŠ¤");			
 		}
 	}
 }
@@ -20,8 +20,8 @@ interface C {
 
 public class AnonymousClass_1 {
 	public static void main(String[] args) {
-		//#1. °´Ã¼ »ı¼º ¹× ¸Ş¼­µå È£Ãâ
+		//#1. ê°ì²´ ìƒì„± ë° ë©”ì„œë“œ í˜¸ì¶œ
 		A a = new A();
-		a.abc(); //ÀÎ½ºÅÏ½º ÀÌ³ÊÅ¬·¡½º
+		a.abc(); //ì¸ìŠ¤í„´ìŠ¤ ì´ë„ˆí´ë˜ìŠ¤
 	}
 }

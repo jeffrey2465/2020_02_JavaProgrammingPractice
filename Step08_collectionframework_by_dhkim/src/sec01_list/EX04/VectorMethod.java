@@ -1,4 +1,4 @@
-package sec01_list.EX04;
+ï»¿package sec01_list.EX04;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,14 +19,14 @@ public class VectorMethod {
 		vector1.add(1, 6);
 		System.out.println(vector1.toString()); //[3, 6, 4, 5]
 		
-		//#3. addAll(¶Ç ´Ù¸¥ ¸®½ºÆ® °´Ã¼)
+		//#3. addAll(ë˜ ë‹¤ë¥¸ ë¦¬ìŠ¤íŠ¸ ê°ì²´)
 		List<Integer> vector2 = new Vector<>();
 		vector2.add(1);
 		vector2.add(2);
 		vector2.addAll(vector1);
 		System.out.println(vector2); //[1, 2, 3, 6, 4, 5]
 		
-		//#4. addAll(int index, ¶Ç ´Ù¸¥ ¸®½ºÆ® °´Ã¼)
+		//#4. addAll(int index, ë˜ ë‹¤ë¥¸ ë¦¬ìŠ¤íŠ¸ ê°ì²´)
 		List<Integer> vector3 = new Vector<>();
 		vector3.add(1);
 		vector3.add(2); //[1 2]
@@ -40,7 +40,7 @@ public class VectorMethod {
 		System.out.println(vector3); //[1, 5, 2, 6]
 		
 		//#6. remove(int index)
-		vector3.remove(1); //1¹ø ÀÎµ¦½º¸¦ »èÁ¦ÇØ¶ó
+		vector3.remove(1); //1ë²ˆ ì¸ë±ìŠ¤ë¥¼ ì‚­ì œí•´ë¼
 		System.out.println(vector3); //[1, 2, 6]
 		
 		//#7. remove(Object o)
@@ -63,11 +63,11 @@ public class VectorMethod {
 		System.out.println(vector3.size());//3
 		
 		//#11.get(int index)
-		System.out.println("0¹øÂ° : " + vector3.get(0)); //1
-		System.out.println("1¹øÂ° : " + vector3.get(1)); //2
-		System.out.println("2¹øÂ° : " + vector3.get(2)); //3
+		System.out.println("0ë²ˆì§¸ : " + vector3.get(0)); //1
+		System.out.println("1ë²ˆì§¸ : " + vector3.get(1)); //2
+		System.out.println("2ë²ˆì§¸ : " + vector3.get(2)); //3
 		for(int i=0; i<vector3.size(); i++)
-			System.out.println(i+"¹øÂ° : "+vector3.get(i));
+			System.out.println(i+"ë²ˆì§¸ : "+vector3.get(i));
 		
 		//#12. toArray() List-->Array
 		Object[] object = vector3.toArray();

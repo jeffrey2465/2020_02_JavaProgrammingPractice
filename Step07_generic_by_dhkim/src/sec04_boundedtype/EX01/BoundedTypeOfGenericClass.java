@@ -1,10 +1,10 @@
-package sec04_boundedtype.EX01;
+ï»¿package sec04_boundedtype.EX01;
 
 class A {}
 class B extends A {}
 class C extends B {}
 
-class D <T extends B> { //B¿Í C¸¸ ¿Ã¼ö ÀÖÀ½
+class D <T extends B> { //Bì™€ Cë§Œ ì˜¬ìˆ˜ ìˆìŒ
 	private T t;
 	public T get() {
 		return t;
@@ -16,7 +16,7 @@ class D <T extends B> { //B¿Í C¸¸ ¿Ã¼ö ÀÖÀ½
 
 public class BoundedTypeOfGenericClass {
 	public static void main(String[] args) {
-//		D<A> d1 = new D<>(); //ºÒ°¡´É
+//		D<A> d1 = new D<>(); //ë¶ˆê°€ëŠ¥
 		D<B> d2 = new D<>();
 		D<C> d3 = new D<>();
 		D d4 = new D(); // = D<B> d4 = new D<>();
@@ -24,7 +24,7 @@ public class BoundedTypeOfGenericClass {
 		d2.set(new B());
 		d2.set(new C());
 		
-//		d3.set(new B()); //ºÒ°¡´É
+//		d3.set(new B()); //ë¶ˆê°€ëŠ¥
 		d3.set(new C());
 		
 		d4.set(new B());

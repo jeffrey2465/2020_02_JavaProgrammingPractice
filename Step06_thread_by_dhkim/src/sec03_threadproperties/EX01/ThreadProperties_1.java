@@ -1,39 +1,39 @@
-package sec03_threadproperties.EX01;
+ï»¿package sec03_threadproperties.EX01;
 
-//¾²·¹µå °´Ã¼ °¡Á®¿À±â/ ÀÌ¸§¼³Á¤/ ¾²·¹µå ¼ö 
+//ì“°ë ˆë“œ ê°ì²´ ê°€ì ¸ì˜¤ê¸°/ ì´ë¦„ì„¤ì •/ ì“°ë ˆë“œ ìˆ˜ 
 
 public class ThreadProperties_1 {	
 	public static void main(String[] args) {
 		
-		//#1. °´Ã¼°¡Á®¿À±â (currentThread()) / ¾²·¹µå ¼ö (activeCount())
+		//#1. ê°ì²´ê°€ì ¸ì˜¤ê¸° (currentThread()) / ì“°ë ˆë“œ ìˆ˜ (activeCount())
 		Thread curThread = Thread.currentThread();
-		System.out.println("ÇöÀç ¾²·¹µåÀÇ ÀÌ¸§ = " + curThread.getName());
-		System.out.println("µ¿ÀÛÇÏ´Â ¾²·¹½º ¼ö = " + Thread.activeCount());
+		System.out.println("í˜„ì¬ ì“°ë ˆë“œì˜ ì´ë¦„ = " + curThread.getName());
+		System.out.println("ë™ì‘í•˜ëŠ” ì“°ë ˆìŠ¤ ìˆ˜ = " + Thread.activeCount());
 		
-		//#2. ¾²·¹µå ÀÌ¸§ ÁöÁ¤ (ÀÚµ¿ÁöÁ¤)
+		//#2. ì“°ë ˆë“œ ì´ë¦„ ì§€ì • (ìë™ì§€ì •)
 		for(int i=0; i<3; i++) {
 			Thread thread = new Thread();
 			System.out.println(thread.getName());
 			thread.start();
 		}
 		
-		//#3. ¾²·¹µå ÀÌ¸§ Á÷Á¢ ÁöÁ¤
+		//#3. ì“°ë ˆë“œ ì´ë¦„ ì§ì ‘ ì§€ì •
 		for(int i=0; i<3; i++) {
 			Thread thread = new Thread();
-			thread.setName(i+"¹øÂ° ¾²·¹µå");
+			thread.setName(i+"ë²ˆì§¸ ì“°ë ˆë“œ");
 			System.out.println(thread.getName());
 			thread.start();
 		}
 		
-		//#4. ¾²·¹µå ÀÌ¸§ ÁöÁ¤ (ÀÚµ¿ÁöÁ¤)
+		//#4. ì“°ë ˆë“œ ì´ë¦„ ì§€ì • (ìë™ì§€ì •)
 		for(int i=0; i<3; i++) {
 			Thread thread = new Thread();
 			System.out.println(thread.getName());
 			thread.start();
 		}
 		
-		//#5. ¾²·¹µå ¼ö 
-		System.out.println("µ¿ÀÛÇÏ´Â ¾²·¹½º ¼ö = " + Thread.activeCount());
+		//#5. ì“°ë ˆë“œ ìˆ˜ 
+		System.out.println("ë™ì‘í•˜ëŠ” ì“°ë ˆìŠ¤ ìˆ˜ = " + Thread.activeCount());
 		
 	}
 }

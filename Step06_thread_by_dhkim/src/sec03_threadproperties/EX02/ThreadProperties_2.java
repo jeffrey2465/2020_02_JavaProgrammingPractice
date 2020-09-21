@@ -1,31 +1,31 @@
-package sec03_threadproperties.EX02;
+ï»¿package sec03_threadproperties.EX02;
 
-//¿ì¼±¼øÀ§
+//ìš°ì„ ìˆœìœ„
 
 class MyThread extends Thread {
 	@Override
 	public void run() {
-		for(long i=0; i<1000000000 ; i++) { } //½Ã°£ Áö¿¬¿ë
-		System.out.println(getName() + "  ¿ì¼±¼øÀ§ : "+ getPriority());		
+		for(long i=0; i<1000000000 ; i++) { } //ì‹œê°„ ì§€ì—°ìš©
+		System.out.println(getName() + "  ìš°ì„ ìˆœìœ„ : "+ getPriority());		
 	}
 }
 
 public class ThreadProperties_2 {
 	public static void main(String[] args) {
 		
-		//#Âü°í. CPU core
-		System.out.println("ÄÚ¾î¼ö : "+ Runtime.getRuntime().availableProcessors()); //
+		//#ì°¸ê³ . CPU core
+		System.out.println("ì½”ì–´ìˆ˜ : "+ Runtime.getRuntime().availableProcessors()); //
 		
-		//#1. µðÆúÆ® ¿ì¼±¼øÀ§
+		//#1. ë””í´íŠ¸ ìš°ì„ ìˆœìœ„
 		for(int i=0; i<3; i++) {
 			Thread thread = new MyThread();
 			thread.start();
 		}
 		
-		//#2. ¿ì¼±¼øÀ§¸¦ Á÷Á¢ ÁöÁ¤
+		//#2. ìš°ì„ ìˆœìœ„ë¥¼ ì§ì ‘ ì§€ì •
 		for(int i=0; i<10; i++) {
 			Thread thread = new MyThread();
-			thread.setName(i+"¹øÂ° ¾²·¹µå");
+			thread.setName(i+"ë²ˆì§¸ ì“°ë ˆë“œ");
 			if(i==9) thread.setPriority(10);
 			thread.start();
 		}

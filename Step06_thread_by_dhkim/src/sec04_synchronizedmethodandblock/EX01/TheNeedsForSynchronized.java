@@ -1,17 +1,17 @@
-package sec04_synchronizedmethodandblock.EX01;
+ï»¿package sec04_synchronizedmethodandblock.EX01;
 
-//# °øÀ¯°´Ã¼
+//# ê³µìœ ê°ì²´
 class MyData {
 	int data = 3;
 	
 	public void plusData() {
-		int mydata = data; //µ¥ÀÌÅÍ¸¦ °¡Á®¿À±â
+		int mydata = data; //ë°ì´í„°ë¥¼ ê°€ì ¸ì˜¤ê¸°
 		try { Thread.sleep(2000);} catch (InterruptedException e) {}		
 		data = mydata+1;
 	}
 }
 
-//#°øÀ¯°´Ã¼¸¦ »ç¿ëÇÏ´Â ¾²·¹µå 
+//#ê³µìœ ê°ì²´ë¥¼ ì‚¬ìš©í•˜ëŠ” ì“°ë ˆë“œ 
 class PlusThread extends Thread {
 	MyData myData;
 	public PlusThread(MyData myData) {
@@ -21,14 +21,14 @@ class PlusThread extends Thread {
 	@Override
 	public void run() {
 		myData.plusData();
-		System.out.println(getName() + "½ÇÇà°á°ú : " + myData.data);
+		System.out.println(getName() + "ì‹¤í–‰ê²°ê³¼ : " + myData.data);
 	}
 }
 
 
 public class TheNeedsForSynchronized {
 	public static void main(String[] args) {
-		//#°øÀ¯°´Ã¼ »ı¼º
+		//#ê³µìœ ê°ì²´ ìƒì„±
 		MyData myData = new MyData();
 				
 		//#1.  plusThread 1

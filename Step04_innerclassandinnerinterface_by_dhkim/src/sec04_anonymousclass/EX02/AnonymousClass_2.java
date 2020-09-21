@@ -1,9 +1,9 @@
-package sec04_anonymousclass.EX02;
+ï»¿package sec04_anonymousclass.EX02;
 
 class A {
 	C c = new C() {
 		public void bcd() {
-			System.out.println("ÀÍ¸íÀÌ³ÊÅ¬·¡½º");			
+			System.out.println("ìµëª…ì´ë„ˆí´ë˜ìŠ¤");			
 		}
 	};
 	
@@ -18,8 +18,8 @@ interface C {
 
 public class AnonymousClass_2 {
 	public static void main(String[] args) {
-		//#1. °´Ã¼ »ı¼º ¹× ¸Ş¼­µå È£Ãâ
+		//#1. ê°ì²´ ìƒì„± ë° ë©”ì„œë“œ í˜¸ì¶œ
 		A a = new A();
-		a.abc(); //ÀÍ¸íÀÌ³ÊÅ¬·¡½º
+		a.abc(); //ìµëª…ì´ë„ˆí´ë˜ìŠ¤
 	}
 }

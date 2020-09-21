@@ -1,39 +1,39 @@
-package sec01_instanceinnerclass.EX02;
+ï»¿package sec01_instanceinnerclass.EX02;
 
 class A {
 	int a = 3;
 	int b = 4;
 	void abc() {
-		System.out.println("A Å¬·¡½º ¸Ş¼­µå");
+		System.out.println("A í´ë˜ìŠ¤ ë©”ì„œë“œ");
 	}
 	
-	//ÀÎ½ºÅÏ½º ÀÌ³ÊÅ¬·¡½º Á¤ÀÇ
+	//ì¸ìŠ¤í„´ìŠ¤ ì´ë„ˆí´ë˜ìŠ¤ ì •ì˜
 	class B {
 		int a = 5;
 		int b = 6;
 		void abc() {
-			System.out.println("B Å¬·¡½º ¸Ş¼­µå");
+			System.out.println("B í´ë˜ìŠ¤ ë©”ì„œë“œ");
 		}
 		void bcd() {
-			// #1. inner classÀÇ ¸â¹ö È£Ãâ ¶Ç´Â »ç¿ë
-			System.out.println(a); //this. ÀÚµ¿Ãß°¡  5
-			System.out.println(b); //this. ÀÚµ¿Ãß°¡  6
-			abc(); //this. ÀÚµ¿Ãß°¡  B Å¬·¡½º ¸Ş¼­µå
+			// #1. inner classì˜ ë©¤ë²„ í˜¸ì¶œ ë˜ëŠ” ì‚¬ìš©
+			System.out.println(a); //this. ìë™ì¶”ê°€  5
+			System.out.println(b); //this. ìë™ì¶”ê°€  6
+			abc(); //this. ìë™ì¶”ê°€  B í´ë˜ìŠ¤ ë©”ì„œë“œ
 			
-			// #2. outer classÀÇ ¸â¹ö È£Ãâ ¶Ç´Â »ç¿ë
-			System.out.println(A.this.a); //this. ÀÚµ¿Ãß°¡  3
-			System.out.println(A.this.b); //this. ÀÚµ¿Ãß°¡  4
-			A.this.abc(); //this. ÀÚµ¿Ãß°¡  A Å¬·¡½º ¸Ş¼­µå
+			// #2. outer classì˜ ë©¤ë²„ í˜¸ì¶œ ë˜ëŠ” ì‚¬ìš©
+			System.out.println(A.this.a); //this. ìë™ì¶”ê°€  3
+			System.out.println(A.this.b); //this. ìë™ì¶”ê°€  4
+			A.this.abc(); //this. ìë™ì¶”ê°€  A í´ë˜ìŠ¤ ë©”ì„œë“œ
 		}
 	}
 }
 
 public class UseMembersOfOuterClass {
 	public static void main(String[] args) {
-		//#1. outer class°´Ã¼ »ı¼º
+		//#1. outer classê°ì²´ ìƒì„±
 		A a = new A();
 		
-		//#2. inner class °´Ã¼ »ı¼º
+		//#2. inner class ê°ì²´ ìƒì„±
 		A.B b = a.new B();
 		b.bcd();
 	}

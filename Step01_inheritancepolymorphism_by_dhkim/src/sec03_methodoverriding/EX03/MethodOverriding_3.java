@@ -1,21 +1,21 @@
-package sec03_methodoverriding.EX03;
+ï»¿package sec03_methodoverriding.EX03;
 
 class A {
 	void print1() {
-		System.out.println("A Å¬·¡½º print1");
+		System.out.println("A í´ë˜ìŠ¤ print1");
 	}
 	void print2() {
-		System.out.println("A Å¬·¡½º print2");
+		System.out.println("A í´ë˜ìŠ¤ print2");
 	}
 }
 
 class B extends A {
 	@Override
 	void print1() {
-		System.out.println("B Å¬·¡½º print1");
+		System.out.println("B í´ë˜ìŠ¤ print1");
 	}
 	void print2(int a) {
-		System.out.println("B Å¬·¡½º print2");
+		System.out.println("B í´ë˜ìŠ¤ print2");
 	}
 }
 
@@ -23,21 +23,21 @@ class B extends A {
 public class MethodOverriding_3 {
 	public static void main(String[] args) {
 		
-		//#1. A Å¸ÀÔ ¼±¾ğ / A »ı¼ºÀÚ »ç¿ë
+		//#1. A íƒ€ì… ì„ ì–¸ / A ìƒì„±ì ì‚¬ìš©
 		A aa = new A();
-		aa.print1(); //A Å¬·¡½º print1
-		aa.print2(); //A Å¬·¡½º print2
+		aa.print1(); //A í´ë˜ìŠ¤ print1
+		aa.print2(); //A í´ë˜ìŠ¤ print2
 		
-		//#2. B Å¸ÀÔ ¼±¾ğ / B »ı¼ºÀÚ »ç¿ë
+		//#2. B íƒ€ì… ì„ ì–¸ / B ìƒì„±ì ì‚¬ìš©
 		B bb = new B();
-		bb.print1(); // B Å¬·¡½º print1
-		bb.print2(); // A Å¬·¡½º print2
-		bb.print2(3);// B Å¬·¡½º print2
+		bb.print1(); // B í´ë˜ìŠ¤ print1
+		bb.print2(); // A í´ë˜ìŠ¤ print2
+		bb.print2(3);// B í´ë˜ìŠ¤ print2
 		
-		//#3. A Å¸ÀÔ ¼±¾ğ / B »ı¼ºÀÚ »ç¿ë
+		//#3. A íƒ€ì… ì„ ì–¸ / B ìƒì„±ì ì‚¬ìš©
 		A ab = new B();
-		ab.print1(); //B Å¬·¡½º print1
-		ab.print2(); //A Å¬·¡½º print2
+		ab.print1(); //B í´ë˜ìŠ¤ print1
+		ab.print2(); //A í´ë˜ìŠ¤ print2
 	}
 }
 

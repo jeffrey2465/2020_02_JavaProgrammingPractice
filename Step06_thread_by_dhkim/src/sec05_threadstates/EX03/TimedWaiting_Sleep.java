@@ -1,10 +1,10 @@
-package sec05_threadstates.EX03;
+ï»¿package sec05_threadstates.EX03;
 
 
 class MyThread1 extends Thread {
 	@Override
 	public void run() {
-		for(long i=0; i<1000000000L ; i++) {} //½Ã°£Áö¿¬
+		for(long i=0; i<1000000000L ; i++) {} //ì‹œê°„ì§€ì—°
 	}
 }
 
@@ -19,8 +19,8 @@ class MyThread2 extends Thread {
 		try {
 			myThread1.join(3000);
 		} catch (InterruptedException e) {
-			System.out.println(" -- join(...) ÁøÇàÁß interrupt() ¹ß»ý");
-			for(long i=0; i<1000000000L ; i++) {} //½Ã°£Áö¿¬
+			System.out.println(" -- join(...) ì§„í–‰ì¤‘ interrupt() ë°œìƒ");
+			for(long i=0; i<1000000000L ; i++) {} //ì‹œê°„ì§€ì—°
 		}
 	}
 }
@@ -29,13 +29,13 @@ class MyThread2 extends Thread {
 public class TimedWaiting_Sleep {
 	public static void main(String[] args) {
 		
-		//#1. °´Ã¼ »ý¼º 
+		//#1. ê°ì²´ ìƒì„± 
 		MyThread1 myThread1 = new MyThread1();
 		MyThread2 myThread2 = new MyThread2(myThread1);
 		myThread1.start();
 		myThread2.start();
 		
-		try {Thread.sleep(100);} catch (InterruptedException e) {} //¾²·¹µå ½ÃÀÛ ÁØºñ ½Ã°£
+		try {Thread.sleep(100);} catch (InterruptedException e) {} //ì“°ë ˆë“œ ì‹œìž‘ ì¤€ë¹„ ì‹œê°„
 		System.out.println("MyThread1 State = " + myThread1.getState()); //Runnable
 		System.out.println("MyThread2 State = " + myThread2.getState()); //Timed_waiting
 		

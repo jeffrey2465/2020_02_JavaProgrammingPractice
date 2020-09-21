@@ -1,9 +1,9 @@
-package sec03_genericmethod.EX02;
+ï»¿package sec03_genericmethod.EX02;
 
 class A {
 	public <T> void method(T t) {
-		//System.out.println(t.length()); //ºÒ°¡´É : Object ¸Þ¼­µå¸¸ È£Ãâ°¡´É
-		System.out.println(t.equals("¾È³ç")); //Object ¸Þ¼­µå¸¸ È£Ãâ°¡´É
+		//System.out.println(t.length()); //ë¶ˆê°€ëŠ¥ : Object ë©”ì„œë“œë§Œ í˜¸ì¶œê°€ëŠ¥
+		System.out.println(t.equals("ì•ˆë…•")); //Object ë©”ì„œë“œë§Œ í˜¸ì¶œê°€ëŠ¥
 	}
 }
 
@@ -11,7 +11,7 @@ public class AvailableMethodInGenericMethod {
 	public static void main(String[] args) {
 		
 		A a = new A();
-		a.<String>method("¾È³ç");
+		a.<String>method("ì•ˆë…•");
 		
 	}
 }

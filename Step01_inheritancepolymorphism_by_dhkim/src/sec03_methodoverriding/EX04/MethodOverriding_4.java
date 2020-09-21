@@ -1,4 +1,4 @@
-package sec03_methodoverriding.EX04;
+ï»¿package sec03_methodoverriding.EX04;
 
 class A {
 	protected void abc() {}
@@ -11,10 +11,10 @@ class B2 extends A {
 	protected void abc() {}
 }
 class B3 extends A {
-//	void abc() {} //default Á¢±ÙÁöÁ¤ÀÚ (Á¼¾ÆÁ®¼­ ºÒ°¡´É)
+//	void abc() {} //default ì ‘ê·¼ì§€ì •ì (ì¢ì•„ì ¸ì„œ ë¶ˆê°€ëŠ¥)
 }
 class B4 extends A {
-//	private void abc() {} //private Á¢±ÙÁöÁ¤ÀÚ (Á¼¾ÆÁ®¼­ ºÒ°¡´É)
+//	private void abc() {} //private ì ‘ê·¼ì§€ì •ì (ì¢ì•„ì ¸ì„œ ë¶ˆê°€ëŠ¥)
 }
 
 public class MethodOverriding_4 {

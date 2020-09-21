@@ -1,4 +1,4 @@
-package sec01_list.EX01;
+ï»¿package sec01_list.EX01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,8 +7,8 @@ import java.util.List;
 public class ArrayVsList {
 	public static void main(String[] args) {
 		
-		//#1. ¹è¿­
-		String[] array = new String[] {"°¡", "³ª", "´Ù", "¶ó", "¸¶", "¹Ù", "»ç"};
+		//#1. ë°°ì—´
+		String[] array = new String[] {"ê°€", "ë‚˜", "ë‹¤", "ë¼", "ë§ˆ", "ë°”", "ì‚¬"};
 		System.out.println(array.length);
 		array[2]=null;
 		array[5]=null;
@@ -19,16 +19,16 @@ public class ArrayVsList {
 		
 		//#2. List
 		List<String> aList = new ArrayList<>();
-		System.out.println(aList.size()); //µ¥ÀÌÅÍÀÇ °³¼ö ±¸ÇÏ±â 
-		aList.add("°¡"); 		aList.add("³ª");
-		aList.add("´Ù"); 		aList.add("¶ó");
-		aList.add("¸¶"); 		aList.add("¹Ù");
-		aList.add("»ç");
-		System.out.println(aList.size()); //µ¥ÀÌÅÍÀÇ °³¼ö ±¸ÇÏ±â
+		System.out.println(aList.size()); //ë°ì´í„°ì˜ ê°œìˆ˜ êµ¬í•˜ê¸° 
+		aList.add("ê°€"); 		aList.add("ë‚˜");
+		aList.add("ë‹¤"); 		aList.add("ë¼");
+		aList.add("ë§ˆ"); 		aList.add("ë°”");
+		aList.add("ì‚¬");
+		System.out.println(aList.size()); //ë°ì´í„°ì˜ ê°œìˆ˜ êµ¬í•˜ê¸°
 		
-		aList.remove("´Ù");
-		aList.remove("¹Ù");
-		System.out.println(aList.size()); //µ¥ÀÌÅÍÀÇ °³¼ö ±¸ÇÏ±â
+		aList.remove("ë‹¤");
+		aList.remove("ë°”");
+		System.out.println(aList.size()); //ë°ì´í„°ì˜ ê°œìˆ˜ êµ¬í•˜ê¸°
 		System.out.println(aList);
 		
 	}

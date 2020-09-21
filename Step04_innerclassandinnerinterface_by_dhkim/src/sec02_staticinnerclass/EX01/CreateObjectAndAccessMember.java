@@ -1,4 +1,4 @@
-package sec02_staticinnerclass.EX01;
+ï»¿package sec02_staticinnerclass.EX01;
 
 class A {
 	int a = 3;
@@ -13,11 +13,11 @@ class A {
 	//static inner class
 	static class B {
 		void bcd() {
-			//#1.ÇÊµå »ç¿ë
-//			System.out.println(a); //staticÀº static¸¸ Æ÷ÇÔ °¡´É 
+			//#1.í•„ë“œ ì‚¬ìš©
+//			System.out.println(a); //staticì€ staticë§Œ í¬í•¨ ê°€ëŠ¥ 
 			System.out.println(b);
-			//#2.¸Ş¼­µå È£Ãâ
-//			method1();//staticÀº static¸¸ Æ÷ÇÔ °¡´É
+			//#2.ë©”ì„œë“œ í˜¸ì¶œ
+//			method1();//staticì€ staticë§Œ í¬í•¨ ê°€ëŠ¥
 			method2();
 		}
 	}
@@ -25,9 +25,9 @@ class A {
 
 public class CreateObjectAndAccessMember {
 	public static void main(String[] args) {
-		//#1. static inner classÀÇ °´Ã¼ »ı¼º
+		//#1. static inner classì˜ ê°ì²´ ìƒì„±
 		A.B b = new A.B();
-		//#2. ¸Ş¼­µå È£Ãâ
+		//#2. ë©”ì„œë“œ í˜¸ì¶œ
 		b.bcd();
 	}
 }

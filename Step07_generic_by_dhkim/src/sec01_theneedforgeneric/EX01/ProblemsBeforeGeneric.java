@@ -1,6 +1,6 @@
-package sec01_theneedforgeneric.EX01;
+ï»¿package sec01_theneedforgeneric.EX01;
 
-//#1. Apple Å¬·¡½º¿Í Apple Å¬·¡½º¸¦ ´ãÀ» ¼ö ÀÖ´Â Å¬·¡½º 
+//#1. Apple í´ë˜ìŠ¤ì™€ Apple í´ë˜ìŠ¤ë¥¼ ë‹´ì„ ìˆ˜ ìˆëŠ” í´ë˜ìŠ¤ 
 class Apple{}
 class Goods1 {
 	private Apple apple = new Apple();
@@ -12,7 +12,7 @@ class Goods1 {
 	}
 }
 
-//#2. Pencil Å¬·¡½º¿Í Pencil Å¬·¡½º¸¦ ´ãÀ» ¼ö ÀÖ´Â Å¬·¡½º 
+//#2. Pencil í´ë˜ìŠ¤ì™€ Pencil í´ë˜ìŠ¤ë¥¼ ë‹´ì„ ìˆ˜ ìˆëŠ” í´ë˜ìŠ¤ 
 class Pencil{}
 class Goods2 {
 	private Pencil pencil = new Pencil();
@@ -27,12 +27,12 @@ class Goods2 {
 
 public class ProblemsBeforeGeneric {
 	public static void main(String[] args) {
-		//#1. Goods1À» ÅëÇØ¼­ Apple °´Ã¼ Ãß°¡ ¹× °¡Á®¿À±â
+		//#1. Goods1ì„ í†µí•´ì„œ Apple ê°ì²´ ì¶”ê°€ ë° ê°€ì ¸ì˜¤ê¸°
 		Goods1 goods1 = new Goods1();
 		goods1.setApple(new Apple());
 		Apple apple = goods1.getApple();
 		
-		//#2. Goods2À» ÅëÇØ¼­ Pencil °´Ã¼ Ãß°¡ ¹× °¡Á®¿À±â
+		//#2. Goods2ì„ í†µí•´ì„œ Pencil ê°ì²´ ì¶”ê°€ ë° ê°€ì ¸ì˜¤ê¸°
 		Goods2 goods2 = new Goods2();
 		goods2.setPencil(new Pencil());
 		Pencil pencil = goods2.getPencil();

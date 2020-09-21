@@ -1,42 +1,42 @@
-package sec02_exceptionhandlingsyntax.EX02;
+ï»¿package sec02_exceptionhandlingsyntax.EX02;
 
 public class MultiCatch_1 {
 	public static void main(String[] args) {
 		
-		//#1. ´ÜÀÏ try-catch
+		//#1. ë‹¨ì¼ try-catch
 		try {
-			System.out.println(3/0); //½ÇÇà¿¹¿Ü (ArithmeticException)			
+			System.out.println(3/0); //ì‹¤í–‰ì˜ˆì™¸ (ArithmeticException)			
 		}
 		catch(ArithmeticException e) {
-			System.out.println("¼ıÀÚ´Â 0À¸·Î ³ª´­¼ö ¾ø½À´Ï´Ù.");			
+			System.out.println("ìˆ«ìëŠ” 0ìœ¼ë¡œ ë‚˜ëˆŒìˆ˜ ì—†ìŠµë‹ˆë‹¤.");			
 		}
 		finally {
-			System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+			System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 		}
 		
 		try {
-			int num = Integer.parseInt("10A"); //½ÇÇà¿¹¿Ü (NumberFormatException)			
+			int num = Integer.parseInt("10A"); //ì‹¤í–‰ì˜ˆì™¸ (NumberFormatException)			
 		}
 		catch(NumberFormatException e) {
-			System.out.println("¼ıÀÚ·Î ¹Ù²Ü ¼ö ¾ø½À´Ï´Ù.");			
+			System.out.println("ìˆ«ìë¡œ ë°”ê¿€ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");			
 		}
 		finally {
-			System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+			System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 		}
 		
-		//#2. ´ÙÁß try-catch
+		//#2. ë‹¤ì¤‘ try-catch
 		try {
 			System.out.println(3/1);
 			int num = Integer.parseInt("10A");			
 		}
 		catch(ArithmeticException e) {
-			System.out.println("¼ıÀÚ´Â 0À¸·Î ³ª´­¼ö ¾ø½À´Ï´Ù.");			
+			System.out.println("ìˆ«ìëŠ” 0ìœ¼ë¡œ ë‚˜ëˆŒìˆ˜ ì—†ìŠµë‹ˆë‹¤.");			
 		}
 		catch(NumberFormatException e) {
-			System.out.println("¼ıÀÚ·Î ¹Ù²Ü ¼ö ¾ø½À´Ï´Ù.");			
+			System.out.println("ìˆ«ìë¡œ ë°”ê¿€ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");			
 		}
 		finally {
-			System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+			System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 		}
 		
 		

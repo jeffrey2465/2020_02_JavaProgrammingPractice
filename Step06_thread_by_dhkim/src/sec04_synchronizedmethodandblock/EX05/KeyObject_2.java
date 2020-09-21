@@ -1,4 +1,4 @@
-package sec04_synchronizedmethodandblock.EX05;
+ï»¿package sec04_synchronizedmethodandblock.EX05;
 
 class MyData {
 	synchronized void abc() {
@@ -10,7 +10,7 @@ class MyData {
 	
 	synchronized void bcd() {
 		for(int i=0; i<3; i++) {
-			System.out.println(i + "ÃÊ");
+			System.out.println(i + "ì´ˆ");
 			try { Thread.sleep(1000); } catch (InterruptedException e) {}
 		}		
 	}
@@ -18,7 +18,7 @@ class MyData {
 	void cde() {
 		synchronized(this) {
 			for(int i=0; i<3; i++) {
-				System.out.println(i + "¹øÂ°");
+				System.out.println(i + "ë²ˆì§¸");
 				try { Thread.sleep(1000); } catch (InterruptedException e) {}
 			}
 		}
@@ -27,10 +27,10 @@ class MyData {
 
 public class KeyObject_2 {
 	public static void main(String[] args) {
-		//#°øÀ¯°´Ã¼
+		//#ê³µìœ ê°ì²´
 		MyData myData = new MyData();
 		
-		//#¼¼°³ÀÇ ¾²·¹µå°¡ °¢°¢ÀÇ ¸Þ¼­µå È£Ãâ
+		//#ì„¸ê°œì˜ ì“°ë ˆë“œê°€ ê°ê°ì˜ ë©”ì„œë“œ í˜¸ì¶œ
 		new Thread() {
 			public void run() {
 				myData.abc();

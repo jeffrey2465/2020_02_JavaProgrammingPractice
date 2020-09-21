@@ -1,4 +1,4 @@
-package sec02_set.EX04;
+ï»¿package sec02_set.EX04;
 
 import java.util.NavigableSet;
 import java.util.SortedSet;
@@ -83,11 +83,11 @@ public class TreeSetMethod_1 {
 		System.out.println(nSet.toString()); // [12, 14, ... , 20]
 		
 		//#15. NavigableSet<E> descendingSet()
-		System.out.println(treeSet); //¿À¸§Â÷¼ø
+		System.out.println(treeSet); //ì˜¤ë¦„ì°¨ìˆœ
 		NavigableSet<Integer> descendingSet = treeSet.descendingSet();
-		System.out.println(descendingSet); //³»¸²Â÷¼ø
+		System.out.println(descendingSet); //ë‚´ë¦¼ì°¨ìˆœ
 		descendingSet=descendingSet.descendingSet();
-		System.out.println(descendingSet); //¿À¸§Â÷¼ø
+		System.out.println(descendingSet); //ì˜¤ë¦„ì°¨ìˆœ
 
 	}
 }

@@ -1,4 +1,4 @@
-package sec02_exceptionhandlingsyntax.EX06;
+ï»¿package sec02_exceptionhandlingsyntax.EX06;
 
 class A implements AutoCloseable {
 	String resource;
@@ -12,7 +12,7 @@ class A implements AutoCloseable {
 	public void close() throws Exception {
 		if(resource!=null) {
 			resource=null;
-			System.out.println("¸®¼Ò½º°¡ ÇØÁ¦µÇ¾ú½À´Ï´Ù.");
+			System.out.println("ë¦¬ì†ŒìŠ¤ê°€ í•´ì œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}		
 	}
 }
@@ -20,15 +20,15 @@ class A implements AutoCloseable {
 public class TryWithResouce_2 {
 	public static void main(String[] args) {
 		
-		//#1. ¸®¼Ò½º¸¦ »ç¿ëÇÏ°í finally¿¡¼­ ¸®¼Ò½º ¼öµ¿ ÇØÁ¦ÇÏ±â 
+		//#1. ë¦¬ì†ŒìŠ¤ë¥¼ ì‚¬ìš©í•˜ê³  finallyì—ì„œ ë¦¬ì†ŒìŠ¤ ìˆ˜ë™ í•´ì œí•˜ê¸° 
 		A a1 = null;	
 		try {
-			a1 = new A("Æ¯Á¤ÆÄÀÏ");
+			a1 = new A("íŠ¹ì •íŒŒì¼");
 			a1.abc();
 		} catch (Exception e) {
-			System.out.println("¿¹¿ÜÃ³¸®");
+			System.out.println("ì˜ˆì™¸ì²˜ë¦¬");
 		} finally {
-			//¸®¼Ò½º ¼öµ¿ ÇØÁ¦
+			//ë¦¬ì†ŒìŠ¤ ìˆ˜ë™ í•´ì œ
 			if(a1.resource!=null) {
 				try {
 					a1.close();
@@ -36,11 +36,11 @@ public class TryWithResouce_2 {
 			}
 		}
 		
-		//#2. ÀÚµ¿ ¸®¼Ò½º ÇØÁ¦	
-		try (A a2 = new A("Æ¯Á¤ÆÄÀÏ");) {			
+		//#2. ìë™ ë¦¬ì†ŒìŠ¤ í•´ì œ	
+		try (A a2 = new A("íŠ¹ì •íŒŒì¼");) {			
 			a2.abc();
 		} catch (Exception e) {
-			System.out.println("¿¹¿ÜÃ³¸®");
+			System.out.println("ì˜ˆì™¸ì²˜ë¦¬");
 		} 		
 		
 		

@@ -1,4 +1,4 @@
-package sec04_boundedtype.EX02;
+ï»¿package sec04_boundedtype.EX02;
 
 class A {
 	public <T extends String> void method1(T t) {
@@ -19,13 +19,13 @@ class B {
 public class BoundedTypeOfGenericMethod {
 	public static void main(String[] args) {
 		A a = new A();
-		a.method1("¾È³ç");
+		a.method1("ì•ˆë…•");
 		
 		B b = new B();
 		b.method1(new MyInterface() {
 			@Override
 			public void print() {
-				System.out.println("print() ±¸Çö");
+				System.out.println("print() êµ¬í˜„");
 			}
 		});;
 		

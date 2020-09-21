@@ -1,32 +1,32 @@
-package sec04_overlapmember.EX03;
+ï»¿package sec04_overlapmember.EX03;
 
 class A{
 	static void print() {
-		System.out.println("A Å¬·¡½º");
+		System.out.println("A í´ë˜ìŠ¤");
 	}
 }
 
 class B extends A{
 	static void print() {
-		System.out.println("B Å¬·¡½º");
+		System.out.println("B í´ë˜ìŠ¤");
 	}
 }
 
 public class OverlapStaticMethod {
 	public static void main(String[] args) {
-		//#1. Å¬·¡½º ÀÌ¸§À¸·Î ¹Ù·Î Á¢±Ù
-		A.print(); //A Å¬·¡½º 
-		B.print(); //B Å¬·¡½º
+		//#1. í´ë˜ìŠ¤ ì´ë¦„ìœ¼ë¡œ ë°”ë¡œ ì ‘ê·¼
+		A.print(); //A í´ë˜ìŠ¤ 
+		B.print(); //B í´ë˜ìŠ¤
 		
-		//#2. °´Ã¼ »ı¼º
+		//#2. ê°ì²´ ìƒì„±
 		A aa = new A();
 		B bb = new B();
 		A ab = new B();
 		
-		//#3. °´Ã¼¸¦ ÅëÇÑ ¸Ş¼­µå È£Ãâ
-		aa.print(); //A Å¬·¡½º 
-		bb.print(); //B Å¬·¡½º
-		ab.print(); //A Å¬·¡½º 
+		//#3. ê°ì²´ë¥¼ í†µí•œ ë©”ì„œë“œ í˜¸ì¶œ
+		aa.print(); //A í´ë˜ìŠ¤ 
+		bb.print(); //B í´ë˜ìŠ¤
+		ab.print(); //A í´ë˜ìŠ¤ 
 		
 	}
 }

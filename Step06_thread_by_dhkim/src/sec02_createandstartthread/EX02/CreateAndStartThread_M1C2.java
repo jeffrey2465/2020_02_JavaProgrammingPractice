@@ -1,16 +1,16 @@
-package sec02_createandstartthread.EX02;
+ï»¿package sec02_createandstartthread.EX02;
 
-//#1. ¹æ¹ı1(M1). Thread Å¬·¡½º »ó¼ÓÇÏ¿© Å¬·¡½º »ı¼º  case2: 3°³ÀÇ ¾²·¹µå »ı¼º
+//#1. ë°©ë²•1(M1). Thread í´ë˜ìŠ¤ ìƒì†í•˜ì—¬ í´ë˜ìŠ¤ ìƒì„±  case2: 3ê°œì˜ ì“°ë ˆë“œ ìƒì„±
 
 class SMIFileThread extends Thread {
 	@Override
 	public void run() {
-		//#2. ÀÚ¸· ¹øÈ£ ÇÏ³ª~´Ù¼¸
-		String[] strArray = {"ÇÏ³ª", "µÑ", "¼Â", "³İ", "´Ù¼¸"};
+		//#2. ìë§‰ ë²ˆí˜¸ í•˜ë‚˜~ë‹¤ì„¯
+		String[] strArray = {"í•˜ë‚˜", "ë‘˜", "ì…‹", "ë„·", "ë‹¤ì„¯"};
 		try { Thread.sleep(10);} catch (InterruptedException e) {}
-		//#4. ÀÚ¸·¹øÈ£ Ãâ·Â
+		//#4. ìë§‰ë²ˆí˜¸ ì¶œë ¥
 		for (int i=0; i<strArray.length; i++) {
-			System.out.println(" - (ÀÚ¸·¹øÈ£) "+strArray[i]);
+			System.out.println(" - (ìë§‰ë²ˆí˜¸) "+strArray[i]);
 			try { Thread.sleep(200);} catch (InterruptedException e) {}
 		}
 	}
@@ -19,12 +19,12 @@ class SMIFileThread extends Thread {
 class VideoFileThread extends Thread {
 	@Override
 	public void run() {
-		//#1 ºñµğ¿ÀÇÁ·¹ÀÓ 1~5
+		//#1 ë¹„ë””ì˜¤í”„ë ˆì„ 1~5
 		int[] intArray = {1, 2, 3, 4, 5};
 		
-		//#3. ºñµğ¿À ÇÁ·¹ÀÓ Ãâ·Â
+		//#3. ë¹„ë””ì˜¤ í”„ë ˆì„ ì¶œë ¥
 		for (int i=0; i<intArray.length; i++) {
-			System.out.print("(ºñµğ¿ÀÇÁ·¹ÀÓ) "+intArray[i]);
+			System.out.print("(ë¹„ë””ì˜¤í”„ë ˆì„) "+intArray[i]);
 			try { Thread.sleep(200);} catch (InterruptedException e) {}
 		}
 	}
@@ -33,11 +33,11 @@ class VideoFileThread extends Thread {
 public class CreateAndStartThread_M1C2 {
 	public static void main(String[] args) {
 		
-		//SMIFileThread °´Ã¼ »ı¼º ¹× ½ÃÀÛ
+		//SMIFileThread ê°ì²´ ìƒì„± ë° ì‹œì‘
 		Thread smiFileThread = new SMIFileThread();
 		smiFileThread.start();
 		
-		//VideoFileThread °´Ã¼ »ı¼º ¹× ½ÃÀÛ
+		//VideoFileThread ê°ì²´ ìƒì„± ë° ì‹œì‘
 		Thread videoFileThread = new VideoFileThread();
 		videoFileThread.start();
 		

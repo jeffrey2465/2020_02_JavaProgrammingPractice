@@ -1,6 +1,6 @@
-package sec02_interface.EX05;
+ï»¿package sec02_interface.EX05;
 
-//#¹æ¹ı2. ÀÍ¸íÀÌ³ÊÅ¬·¡½º¸¦ ÀÌ¿ëÇÑ °´Ã¼ »ı¼º 
+//#ë°©ë²•2. ìµëª…ì´ë„ˆí´ë˜ìŠ¤ë¥¼ ì´ìš©í•œ ê°ì²´ ìƒì„± 
 interface A {
 	int a = 3;
 	void abc();
@@ -8,18 +8,18 @@ interface A {
 
 public class CreateObjectOfInterface_2 {
 	public static void main(String[] args) {
-		//#1. °´Ã¼ »ı¼º
+		//#1. ê°ì²´ ìƒì„±
 		A a1 = new A() {			
 			public void abc() {
-				System.out.println("¹æ¹ı2. ÀÍ¸íÀÌ³ÊÅ¬·¡½º¸¦ ÀÌ¿ëÇÑ °´Ã¼ »ı¼º ");				
+				System.out.println("ë°©ë²•2. ìµëª…ì´ë„ˆí´ë˜ìŠ¤ë¥¼ ì´ìš©í•œ ê°ì²´ ìƒì„± ");				
 			}
 		};
 		A a2 = new A() {			
 			public void abc() {
-				System.out.println("¹æ¹ı2. ÀÍ¸íÀÌ³ÊÅ¬·¡½º¸¦ ÀÌ¿ëÇÑ °´Ã¼ »ı¼º ");				
+				System.out.println("ë°©ë²•2. ìµëª…ì´ë„ˆí´ë˜ìŠ¤ë¥¼ ì´ìš©í•œ ê°ì²´ ìƒì„± ");				
 			}
 		};
-		//#2. ¸Ş¼­µå È£Ãâ
+		//#2. ë©”ì„œë“œ í˜¸ì¶œ
 		a1.abc();
 		a2.abc();
 	}

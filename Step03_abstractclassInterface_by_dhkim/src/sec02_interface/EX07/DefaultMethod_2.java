@@ -1,25 +1,25 @@
-package sec02_interface.EX07;
+ï»¿package sec02_interface.EX07;
 
 interface A {
 	default void abc() {
-		System.out.println("A ÀÎÅÍÆäÀÌ½ºÀÇ abc()");
+		System.out.println("A ì¸í„°í˜ì´ìŠ¤ì˜ abc()");
 	}
 }
 
 class B implements A {
 	public void abc() {
-		A.super.abc();	//super.abc() ÀÌ°Ç ºÎ¸ğÅ¬·¡½ºÀÇ  abc() ¸Ş¼­µå È£ÃâÇÏ¶õ ¼Ò¸®	
-		System.out.println("B Å¬·¡½ºÀÇ abc()");		
+		A.super.abc();	//super.abc() ì´ê±´ ë¶€ëª¨í´ë˜ìŠ¤ì˜  abc() ë©”ì„œë“œ í˜¸ì¶œí•˜ë€ ì†Œë¦¬	
+		System.out.println("B í´ë˜ìŠ¤ì˜ abc()");		
 	}
 }
 
 
 public class DefaultMethod_2 {
 	public static void main(String[] args) {
-		//#1. °´Ã¼»ı¼º
+		//#1. ê°ì²´ìƒì„±
 		B b = new B();
 		
-		//#2. ¸Ş¼­µå È£Ãâ
-		b.abc(); //A ÀÎÅÍÆäÀÌ½ºÀÇ abc() B Å¬·¡½ºÀÇ abc()
+		//#2. ë©”ì„œë“œ í˜¸ì¶œ
+		b.abc(); //A ì¸í„°í˜ì´ìŠ¤ì˜ abc() B í´ë˜ìŠ¤ì˜ abc()
 	}
 }

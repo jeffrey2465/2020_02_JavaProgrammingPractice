@@ -1,30 +1,30 @@
-package sec03_methodoverriding.EX01;
+ï»¿package sec03_methodoverriding.EX01;
 
 class A{
 	void print() {
-		System.out.println("A Å¬·¡½º");
+		System.out.println("A í´ë˜ìŠ¤");
 	}
 }
 
 class B extends A{
 	@Override
 	void print() {
-		System.out.println("B Å¬·¡½º");
+		System.out.println("B í´ë˜ìŠ¤");
 	}
 }
 
 public class MethodOverriding_1 {
 	public static void main(String[] args) {
-		//#1. A Å¸ÀÔ / A »ı¼ºÀÚ
+		//#1. A íƒ€ì… / A ìƒì„±ì
 		A aa = new A();
-		aa.print(); //A Å¬·¡½º
+		aa.print(); //A í´ë˜ìŠ¤
 		
-		//#2. B Å¸ÀÔ / B »ı¼ºÀÚ
+		//#2. B íƒ€ì… / B ìƒì„±ì
 		B bb = new B();
-		bb.print(); //B Å¬·¡½º
+		bb.print(); //B í´ë˜ìŠ¤
 		
-		//#3. A Å¸ÀÔ / B »ı¼ºÀÚ
+		//#3. A íƒ€ì… / B ìƒì„±ì
 		A ab = new B();
-		ab.print(); //B Å¬·¡½º
+		ab.print(); //B í´ë˜ìŠ¤
 	}
 }

@@ -1,17 +1,17 @@
-package sec02_interface.EX02;
+ï»¿package sec02_interface.EX02;
 
 interface A {}
 interface B {}
 
-//#1. ´ÜÀÏÀÎÅÍÆäÀÌ½º »ó¼Ó
+//#1. ë‹¨ì¼ì¸í„°í˜ì´ìŠ¤ ìƒì†
 class C implements A {	
 }
 
-//#2. ´ÙÁßÀÎÅÍÆäÀÌ½º »ó¼Ó
+//#2. ë‹¤ì¤‘ì¸í„°í˜ì´ìŠ¤ ìƒì†
 class D implements A, B {
 }
 
-//#3. Å¬·¡½º¿Í ÀÎÅÍÆäÀÌ½º¸¦ ÇÑ¹ø¿¡ »ó¼Ó (extends¿Í implementsÀÇ ¼ø¼­´Â º¯°æ ºÒ°¡)
+//#3. í´ë˜ìŠ¤ì™€ ì¸í„°í˜ì´ìŠ¤ë¥¼ í•œë²ˆì— ìƒì† (extendsì™€ implementsì˜ ìˆœì„œëŠ” ë³€ê²½ ë¶ˆê°€)
 class E extends C implements A,B {
 	
 }

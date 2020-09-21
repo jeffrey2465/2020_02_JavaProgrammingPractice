@@ -1,6 +1,6 @@
-package sec04_userexception.EX01;
+ï»¿package sec04_userexception.EX01;
 
-//#1. »ç¿ëÀÚ ÀÏ¹İ¿¹¿Ü (checked exception)
+//#1. ì‚¬ìš©ì ì¼ë°˜ì˜ˆì™¸ (checked exception)
 class MyException extends Exception {
 	public MyException() {
 		super();
@@ -10,7 +10,7 @@ class MyException extends Exception {
 	}
 }
 
-//#2. »ç¿ëÀÚ ½ÇÇà¿¹¿Ü (unchecked exception = runtime exception)
+//#2. ì‚¬ìš©ì ì‹¤í–‰ì˜ˆì™¸ (unchecked exception = runtime exception)
 class MyRTException extends RuntimeException {
 	public MyRTException() {
 		super();
@@ -21,42 +21,42 @@ class MyRTException extends RuntimeException {
 }
 
 class A {
-	//#3. »ç¿ëÀÚ Á¤ÀÇ ¿¹¿Ü °´Ã¼ »ı¼º
+	//#3. ì‚¬ìš©ì ì •ì˜ ì˜ˆì™¸ ê°ì²´ ìƒì„±
 	MyException me1 = new MyException();
-	MyException me2 = new MyException("¿¹¿Ü¸Ş¼¼Áö: MyException");
+	MyException me2 = new MyException("ì˜ˆì™¸ë©”ì„¸ì§€: MyException");
 	
 	MyRTException mre1 = new MyRTException();
-	MyRTException mre2 = new MyRTException("¿¹¿Ü¸Ş¼¼Áö: MyRTException");
+	MyRTException mre2 = new MyRTException("ì˜ˆì™¸ë©”ì„¸ì§€: MyRTException");
 	
 	
-	//#4. ¿¹¿Ü ´øÁö±â (throw) : ´øÁø½ÃÁ¡¿¡¼­ ¿¹¿Ü ¹ß»ı
-	//@¹æ¹ı#1. ¿¹¿Ü¸¦ Á÷Á¢Ã³¸®
+	//#4. ì˜ˆì™¸ ë˜ì§€ê¸° (throw) : ë˜ì§„ì‹œì ì—ì„œ ì˜ˆì™¸ ë°œìƒ
+	//@ë°©ë²•#1. ì˜ˆì™¸ë¥¼ ì§ì ‘ì²˜ë¦¬
 	void abc_1(int num) {
 		try {
 			if(num>70)
-				System.out.println("Á¤»óÀÛµ¿");
+				System.out.println("ì •ìƒì‘ë™");
 			else 
-				throw me1; //¿¹¿Ü¸¦ ´øÁø ÀÌ½ÃÁ¡¿¡ ¿¹¿Ü ¹ß»ı
+				throw me1; //ì˜ˆì™¸ë¥¼ ë˜ì§„ ì´ì‹œì ì— ì˜ˆì™¸ ë°œìƒ
 		} catch (MyException e) {
-			System.out.println("¿¹¿ÜÃ³¸® 1");
+			System.out.println("ì˜ˆì™¸ì²˜ë¦¬ 1");
 		}
 	}
 	void bcd_1() {
 		abc_1(65);
 	}
-	//@¹æ¹ı#2. ¿¹¿ÜÀÇ Àü°¡
+	//@ë°©ë²•#2. ì˜ˆì™¸ì˜ ì „ê°€
 	void abc_2(int num) throws MyException {
 		if(num>70)
-			System.out.println("Á¤»óÀÛµ¿");
+			System.out.println("ì •ìƒì‘ë™");
 		else 
-			throw me1; //¿¹¿Ü¸¦ ´øÁø ÀÌ½ÃÁ¡¿¡ ¿¹¿Ü ¹ß»ı
+			throw me1; //ì˜ˆì™¸ë¥¼ ë˜ì§„ ì´ì‹œì ì— ì˜ˆì™¸ ë°œìƒ
 	}
 	
 	void bcd_2() {
 		try {
 			abc_2(65);
 		} catch (MyException e) {
-			System.out.println("¿¹¿ÜÃ³¸® 2");
+			System.out.println("ì˜ˆì™¸ì²˜ë¦¬ 2");
 		}
 	}		
 }

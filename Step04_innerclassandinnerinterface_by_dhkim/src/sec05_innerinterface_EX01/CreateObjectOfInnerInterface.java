@@ -1,4 +1,4 @@
-package sec05_innerinterface_EX01;
+ï»¿package sec05_innerinterface_EX01;
 
 class A {
 	interface B {
@@ -8,21 +8,21 @@ class A {
 
 class C implements A.B {
 	public void bcd() {
-		System.out.println("ÀÌ³ÊÀÎÅÍÆäÀÌ½º ±¸Çö Å¬·¡½º »ı¼º");
+		System.out.println("ì´ë„ˆì¸í„°í˜ì´ìŠ¤ êµ¬í˜„ í´ë˜ìŠ¤ ìƒì„±");
 	}
 }
 
 
 public class CreateObjectOfInnerInterface {
 	public static void main(String[] args) {
-		//°´Ã¼»ı¼º ¹æ¹ı #1 (ÀÚ½ÄÅ¬·¡½º Á÷Á¢ »ı¼º)
+		//ê°ì²´ìƒì„± ë°©ë²• #1 (ìì‹í´ë˜ìŠ¤ ì§ì ‘ ìƒì„±)
 		A.B ab = new C();
 		C c = new C();
 		
-		//°´Ã¼»ı¼º ¹æ¹ı #2 (ÀÍ¸íÀÌ³ÊÅ¬·¡½º »ı¼º)		
+		//ê°ì²´ìƒì„± ë°©ë²• #2 (ìµëª…ì´ë„ˆí´ë˜ìŠ¤ ìƒì„±)		
 		A.B b = new A.B() {			
 			public void bcd() {
-				System.out.println("ÀÍ¸íÀÌ³ÊÅ¬·¡½º·Î °´Ã¼ »ı¼º");
+				System.out.println("ìµëª…ì´ë„ˆí´ë˜ìŠ¤ë¡œ ê°ì²´ ìƒì„±");
 			}
 		};
 		

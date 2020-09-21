@@ -1,4 +1,4 @@
-package sec01_finalmodifier.EX02;
+ï»¿package sec01_finalmodifier.EX02;
 
 class A {
 	void abc() {}
@@ -7,12 +7,12 @@ class A {
 
 class B extends A {
 	void abc() {}
-	//void bcd() {} //final ¸Ş¼­µå´Â ¿À¹ö¶óÀÌµù ºÒ°¡
+	//void bcd() {} //final ë©”ì„œë“œëŠ” ì˜¤ë²„ë¼ì´ë”© ë¶ˆê°€
 }
 
 final class C {}
 
-//class D extends C {} //final Å¬·¡½º´Â »ó¼ÓÀÚÃ¼°¡ ºÒ°¡
+//class D extends C {} //final í´ë˜ìŠ¤ëŠ” ìƒì†ìì²´ê°€ ë¶ˆê°€
 
 public class FinalModifier_2 {
 

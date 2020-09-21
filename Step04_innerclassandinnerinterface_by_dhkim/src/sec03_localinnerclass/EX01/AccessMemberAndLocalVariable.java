@@ -1,17 +1,17 @@
-package sec03_localinnerclass.EX01;
+ï»¿package sec03_localinnerclass.EX01;
 
 class A {
-	int a = 3; //ÇÊµå
+	int a = 3; //í•„ë“œ
 	void abc() {
-		int b = 5; //Áö¿ªº¯¼ö
+		int b = 5; //ì§€ì—­ë³€ìˆ˜
 		
-		//Áö¿ªÀÌ³ÊÅ¬·¡½º
+		//ì§€ì—­ì´ë„ˆí´ë˜ìŠ¤
 		class B {
 			void bcd() {
-				System.out.println(a); //ÇÊµå
-				System.out.println(b); //Áö¿ªº¯¼ö
+				System.out.println(a); //í•„ë“œ
+				System.out.println(b); //ì§€ì—­ë³€ìˆ˜
 				a=5;
-//				b=7; //Áö¿ªÀÌ³ÊÅ¬·¡½º¿¡¼­ »ç¿ëÇÏ´Â Áö¿ªº¯¼ö´Â ÀÚµ¿À¸·Î final·Î ¼±¾ğ 
+//				b=7; //ì§€ì—­ì´ë„ˆí´ë˜ìŠ¤ì—ì„œ ì‚¬ìš©í•˜ëŠ” ì§€ì—­ë³€ìˆ˜ëŠ” ìë™ìœ¼ë¡œ finalë¡œ ì„ ì–¸ 
 			}
 		}
 		
@@ -22,7 +22,7 @@ class A {
 
 public class AccessMemberAndLocalVariable {
 	public static void main(String[] args) {
-		//#1. °´Ã¼ »ı¼º ¹× ¸Ş¼­µå È£Ãâ
+		//#1. ê°ì²´ ìƒì„± ë° ë©”ì„œë“œ í˜¸ì¶œ
 		A a = new A();
 		a.abc();
 	}

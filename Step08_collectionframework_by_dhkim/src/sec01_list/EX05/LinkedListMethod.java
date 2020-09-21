@@ -1,4 +1,4 @@
-package sec01_list.EX05;
+ï»¿package sec01_list.EX05;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -20,14 +20,14 @@ public class LinkedListMethod {
 		linkedlist1.add(1, 6);
 		System.out.println(linkedlist1.toString()); //[3, 6, 4, 5]
 		
-		//#3. addAll(¶Ç ´Ù¸¥ ¸®½ºÆ® °´Ã¼)
+		//#3. addAll(ë˜ ë‹¤ë¥¸ ë¦¬ìŠ¤íŠ¸ ê°ì²´)
 		List<Integer> linkedlist2 = new LinkedList<>();
 		linkedlist2.add(1);
 		linkedlist2.add(2);
 		linkedlist2.addAll(linkedlist2);
 		System.out.println(linkedlist2); //[1, 2, 3, 6, 4, 5]
 		
-		//#4. addAll(int index, ¶Ç ´Ù¸¥ ¸®½ºÆ® °´Ã¼)
+		//#4. addAll(int index, ë˜ ë‹¤ë¥¸ ë¦¬ìŠ¤íŠ¸ ê°ì²´)
 		List<Integer> linkedlist3 = new LinkedList<>();
 		linkedlist3.add(1);
 		linkedlist3.add(2); //[1 2]
@@ -41,7 +41,7 @@ public class LinkedListMethod {
 		System.out.println(linkedlist3); //[1, 5, 2, 6]
 		
 		//#6. remove(int index)
-		linkedlist3.remove(1); //1¹ø ÀÎµ¦½º¸¦ »èÁ¦ÇØ¶ó
+		linkedlist3.remove(1); //1ë²ˆ ì¸ë±ìŠ¤ë¥¼ ì‚­ì œí•´ë¼
 		System.out.println(linkedlist3); //[1, 2, 6]
 		
 		//#7. remove(Object o)
@@ -64,11 +64,11 @@ public class LinkedListMethod {
 		System.out.println(linkedlist3.size());//3
 		
 		//#11.get(int index)
-		System.out.println("0¹øÂ° : " + linkedlist3.get(0)); //1
-		System.out.println("1¹øÂ° : " + linkedlist3.get(1)); //2
-		System.out.println("2¹øÂ° : " + linkedlist3.get(2)); //3
+		System.out.println("0ë²ˆì§¸ : " + linkedlist3.get(0)); //1
+		System.out.println("1ë²ˆì§¸ : " + linkedlist3.get(1)); //2
+		System.out.println("2ë²ˆì§¸ : " + linkedlist3.get(2)); //3
 		for(int i=0; i<linkedlist3.size(); i++)
-			System.out.println(i+"¹øÂ° : "+linkedlist3.get(i));
+			System.out.println(i+"ë²ˆì§¸ : "+linkedlist3.get(i));
 		
 		//#12. toArray() List-->Array
 		Object[] object = linkedlist3.toArray();

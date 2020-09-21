@@ -1,4 +1,4 @@
-package sec02_set.EX06;
+ï»¿package sec02_set.EX06;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -10,26 +10,26 @@ public class SetSummay {
 	
 		//#1. HashSet
 		Set<String> hashSet = new HashSet<>();
-		hashSet.add("´Ù");
-		hashSet.add("¸¶");
-		hashSet.add("³ª");
-		hashSet.add("°¡");
-		System.out.println(hashSet.toString()); //[°¡, ´Ù, ¸¶, ³ª]
+		hashSet.add("ë‹¤");
+		hashSet.add("ë§ˆ");
+		hashSet.add("ë‚˜");
+		hashSet.add("ê°€");
+		System.out.println(hashSet.toString()); //[ê°€, ë‹¤, ë§ˆ, ë‚˜]
 		
 		//#2. LinkedHashSet
 		Set<String> linkedHashSet = new LinkedHashSet<>();
-		linkedHashSet.add("´Ù");
-		linkedHashSet.add("¸¶");
-		linkedHashSet.add("³ª");
-		linkedHashSet.add("°¡");
-		System.out.println(linkedHashSet.toString()); //[´Ù ¸¶ ³ª °¡]
+		linkedHashSet.add("ë‹¤");
+		linkedHashSet.add("ë§ˆ");
+		linkedHashSet.add("ë‚˜");
+		linkedHashSet.add("ê°€");
+		System.out.println(linkedHashSet.toString()); //[ë‹¤ ë§ˆ ë‚˜ ê°€]
 		
 		//#3. TreeSet
 		Set<String> treeSet = new TreeSet<>();
-		treeSet.add("´Ù");
-		treeSet.add("¸¶");
-		treeSet.add("³ª");
-		treeSet.add("°¡");
-		System.out.println(treeSet.toString()); //[°¡ ³ª ´Ù ¸¶]
+		treeSet.add("ë‹¤");
+		treeSet.add("ë§ˆ");
+		treeSet.add("ë‚˜");
+		treeSet.add("ê°€");
+		System.out.println(treeSet.toString()); //[ê°€ ë‚˜ ë‹¤ ë§ˆ]
 	}
 }

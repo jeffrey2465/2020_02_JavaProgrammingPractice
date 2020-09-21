@@ -1,4 +1,4 @@
-package sec05_threadstates.EX02;
+ï»¿package sec05_threadstates.EX02;
 
 class MyThread extends Thread {
 	boolean yieldFlag;
@@ -8,8 +8,8 @@ class MyThread extends Thread {
 			if(yieldFlag) {
 				Thread.yield();
 			} else {
-				System.out.println(getName() + " ½ÇÇà");
-				for(long i=0; i<1000000000L ; i++) {} //½Ã°£Áö¿¬
+				System.out.println(getName() + " ì‹¤í–‰");
+				for(long i=0; i<1000000000L ; i++) {} //ì‹œê°„ì§€ì—°
 			}
 		}
 	}
@@ -30,7 +30,7 @@ public class YieldInRunnableState {
 		thread2.setDaemon(true);
 		thread2.start();
 		
-		//#1. 6ÃÊ Áö¿¬ (1ÃÊ¸¶´Ù ÇÑ¹ø¾¿ ¾çº¸)
+		//#1. 6ì´ˆ ì§€ì—° (1ì´ˆë§ˆë‹¤ í•œë²ˆì”© ì–‘ë³´)
 		for(int i=0; i<6; i++) {
 			try { Thread.sleep(1000); } catch (InterruptedException e) {}
 			thread1.yieldFlag=!thread1.yieldFlag;

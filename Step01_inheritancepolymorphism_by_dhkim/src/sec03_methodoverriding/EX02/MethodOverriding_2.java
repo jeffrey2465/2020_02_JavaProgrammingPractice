@@ -1,4 +1,4 @@
-package sec03_methodoverriding.EX02;
+ï»¿package sec03_methodoverriding.EX02;
 
 class Animal {
 	void cry() {}
@@ -7,28 +7,28 @@ class Animal {
 class Bird extends Animal {
 	@Override
 	void cry() {
-		System.out.println("Â±Â±");
+		System.out.println("ì§¹ì§¹");
 	}
 }
 
 class Dog extends Animal {
 	@Override
 	void cry() {
-		System.out.println("¸Û¸Û");
+		System.out.println("ë©ë©");
 	}
 }
 
 class Cat extends Animal {
 	@Override
 	void cry() {
-		System.out.println("¾ß¿Ë");
+		System.out.println("ì•¼ì˜¹");
 	}
 }
 
 public class MethodOverriding_2 {
 	public static void main(String[] args) {
 		
-		//#1. °¢°¢ÀÇ Å¸ÀÔÀ¸·Î ¼±¾ğ + °¢°¢ÀÇ Å¸ÀÔÀ¸·Î »ı¼º
+		//#1. ê°ê°ì˜ íƒ€ì…ìœ¼ë¡œ ì„ ì–¸ + ê°ê°ì˜ íƒ€ì…ìœ¼ë¡œ ìƒì„±
 		Animal aa = new Animal();
 		Bird bb = new Bird();
 		Cat cc = new Cat();
@@ -39,7 +39,7 @@ public class MethodOverriding_2 {
 		cc.cry();
 		dd.cry();
 		
-		//#2. Animal Å¸ÀÔÀ¸·Î ¼±¾ğ + ÀÚ½ÄÅ¬·¡½º Å¸ÀÔÀ¸·Î »ı¼º
+		//#2. Animal íƒ€ì…ìœ¼ë¡œ ì„ ì–¸ + ìì‹í´ë˜ìŠ¤ íƒ€ì…ìœ¼ë¡œ ìƒì„±
 		Animal ab = new Bird();
 		Animal ac = new Cat();
 		Animal ad = new Dog();
@@ -48,7 +48,7 @@ public class MethodOverriding_2 {
 		ac.cry();
 		ad.cry();
 		
-		//#3. ¹è¿­·Î °ü¸®
+		//#3. ë°°ì—´ë¡œ ê´€ë¦¬
 		Animal[] animals = {ab, ac, ad};
 		for(Animal animal : animals) {
 			animal.cry();

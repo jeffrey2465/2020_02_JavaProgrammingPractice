@@ -1,23 +1,23 @@
-package sec01_theneedforthread.EX01;
+ï»¿package sec01_theneedforthread.EX01;
 
 public class TheNeedForThread {
 	public static void main(String[] args) {
 		
-		//#1 ºñµğ¿ÀÇÁ·¹ÀÓ 1~5
+		//#1 ë¹„ë””ì˜¤í”„ë ˆì„ 1~5
 		int[] intArray = {1, 2, 3, 4, 5};
 		
-		//#2. ÀÚ¸· ¹øÈ£ ÇÏ³ª~´Ù¼¸
-		String[] strArray = {"ÇÏ³ª", "µÑ", "¼Â", "³İ", "´Ù¼¸"};
+		//#2. ìë§‰ ë²ˆí˜¸ í•˜ë‚˜~ë‹¤ì„¯
+		String[] strArray = {"í•˜ë‚˜", "ë‘˜", "ì…‹", "ë„·", "ë‹¤ì„¯"};
 		
-		//#3. ºñµğ¿À ÇÁ·¹ÀÓ Ãâ·Â
+		//#3. ë¹„ë””ì˜¤ í”„ë ˆì„ ì¶œë ¥
 		for (int i=0; i<intArray.length; i++) {
-			System.out.println("(ºñµğ¿ÀÇÁ·¹ÀÓ) "+intArray[i]);
+			System.out.println("(ë¹„ë””ì˜¤í”„ë ˆì„) "+intArray[i]);
 			try { Thread.sleep(200);} catch (InterruptedException e) {}
 		}
 		
-		//#4. ÀÚ¸·¹øÈ£ Ãâ·Â
+		//#4. ìë§‰ë²ˆí˜¸ ì¶œë ¥
 		for (int i=0; i<strArray.length; i++) {
-			System.out.println("(ÀÚ¸·¹øÈ£) "+strArray[i]);
+			System.out.println("(ìë§‰ë²ˆí˜¸) "+strArray[i]);
 			try { Thread.sleep(200);} catch (InterruptedException e) {}
 		}
 	}

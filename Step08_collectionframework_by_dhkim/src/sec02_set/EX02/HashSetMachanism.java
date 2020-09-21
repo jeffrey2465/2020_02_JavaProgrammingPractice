@@ -1,4 +1,4 @@
-package sec02_set.EX02;
+ï»¿package sec02_set.EX02;
 
 import java.util.HashSet;
 import java.util.Objects;
@@ -51,7 +51,7 @@ class C {
 public class HashSetMachanism {
 	public static void main(String[] args) {
 		
-		//#1. ¾î¶²°Íµµ ¿À¹ö¶óÀÌµù ÇÏÁö ¾ÊÀ½
+		//#1. ì–´ë–¤ê²ƒë„ ì˜¤ë²„ë¼ì´ë”© í•˜ì§€ ì•ŠìŒ
 		Set<A> hashSet1 = new HashSet<>();
 		A a1 = new A(3);
 		A a2 = new A(3);
@@ -64,7 +64,7 @@ public class HashSetMachanism {
 		System.out.println();
 		
 		
-		//#2. equals ¸Ş¼­µå¸¸ ¿À¹ö¶óÀÌµù
+		//#2. equals ë©”ì„œë“œë§Œ ì˜¤ë²„ë¼ì´ë”©
 		Set<B> hashSet2 = new HashSet<>();
 		B b1 = new B(3);
 		B b2 = new B(3);
@@ -76,7 +76,7 @@ public class HashSetMachanism {
 		System.out.println(hashSet2.size()); //2
 		System.out.println();
 		
-		//#2. equals + hashCode ¸Ş¼­µå ¿À¹ö¶óÀÌµù
+		//#2. equals + hashCode ë©”ì„œë“œ ì˜¤ë²„ë¼ì´ë”©
 		Set<C> hashSet3 = new HashSet<>();
 		C c1 = new C(3);
 		C c2 = new C(3);

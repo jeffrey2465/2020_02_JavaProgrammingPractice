@@ -1,4 +1,4 @@
-package sec01_typeofexception.EX02;
+ï»¿package sec01_typeofexception.EX02;
 
 class A{}
 class B extends A {}
@@ -6,7 +6,7 @@ class B extends A {}
 public class UncheckedException {
 	public static void main(String[] args) {
 		
-		//#. UncheckedException (½ÇÇà¿¹¿Ü) = RuntimeException
+		//#. UncheckedException (ì‹¤í–‰ì˜ˆì™¸) = RuntimeException
 		
 		//#1. ArithmeticException
 		//System.out.println(3/0);
