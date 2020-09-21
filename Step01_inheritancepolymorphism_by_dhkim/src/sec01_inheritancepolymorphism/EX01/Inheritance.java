@@ -21,7 +21,7 @@ public class Inheritance {
 	public static void main(String[] args) {
 		//#1. Human 객체 생성
 		Human h = new Human();
-		h.name = "김민성";
+		h.name = "홍길동";
 		h.age = 15;
 		h.eat();
 		h.sleep();
