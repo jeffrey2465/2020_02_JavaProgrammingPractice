@@ -1,6 +1,6 @@
 ﻿package sec01_inheritancepolymorphism.EX01;
 
-//클래스의 상속
+//클래스의 상속 (사람, 학생, 직장인)
 
 class Human {
 	String name;
