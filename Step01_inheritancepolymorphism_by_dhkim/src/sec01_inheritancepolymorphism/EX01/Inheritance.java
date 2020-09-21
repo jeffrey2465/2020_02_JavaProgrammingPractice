@@ -19,25 +19,25 @@ class Worker extends Human {
 
 public class Inheritance {
 	public static void main(String[] args) {
-		//#1. Human °´Ã¼ »ý¼º
+		//#1. Human ê°ì²´ ìƒì„±
 		Human h = new Human();
-		h.name = "±è¹Î¼º";
+		h.name = "ê¹€ë¯¼ì„±";
 		h.age = 15;
 		h.eat();
 		h.sleep();
 		
-		//#2. Student °´Ã¼ »ý¼º
+		//#2. Student ê°ì²´ ìƒì„±
 		Student s = new Student();
-		s.name = "±è¹Î¼º";
+		s.name = "ê¹€ë¯¼ì„±";
 		s.age = 15;
 		s.studentID =128;
 		s.eat();
 		s.sleep();
 		s.goToSchool();
 		
-		//#3. Worker °´Ã¼ »ý¼º
+		//#3. Worker ê°ì²´ ìƒì„±
 		Worker w = new Worker();
-		w.name = "±èÇöÁö";
+		w.name = "ê¹€í˜„ì§€"; 
 		w.age = 30;
 		w.workerID = 128;
 		w.eat();
