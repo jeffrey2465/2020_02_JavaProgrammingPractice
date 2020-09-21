@@ -1,5 +1,7 @@
 ﻿package sec01_inheritancepolymorphism.EX01;
 
+//클래스의 상속
+
 class Human {
 	String name;
 	int age;
